@@ -6,5 +6,9 @@
   "license": "MIT",
   "dependencies": {
     "rellax": "^1.10.0"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.htlm --public-url ./"
   }
 }
