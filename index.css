@@ -1,0 +1,62 @@
+.info {
+  pointer-events: all;
+  z-index: -10;
+  position: absolute;
+  grid-row-gap: 25em;
+  grid-column-gap: 10em;
+  margin: 10rem;
+  top: 0;
+  left: 0;
+  height: 150%;
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: '. zach . shrmn' 'owl owl owl .' 'writing . . code' 'arena . . e-worm' '. hang hang .';
+}
+p,
+ul,
+li,
+a {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style-type: '↝';
+  padding: 0;
+}
+ul li {
+  padding: 1rem;
+}
+
+.zach {
+  grid-area: zach;
+}
+
+.code {
+  grid-area: code;
+}
+
+.owl {
+  grid-area: owl;
+}
+
+.e-worm {
+  grid-area: e-worm;
+}
+
+.writing {
+  grid-area: writing;
+}
+
+.shrmn {
+  grid-area: shrmn;
+}
+
+.arena {
+  grid-area: arena;
+}
+
+.hang {
+  grid-area: hang;
+}

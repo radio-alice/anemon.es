@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.html",
   "author": "zach sherman",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "rellax": "^1.10.0"
+  }
 }
