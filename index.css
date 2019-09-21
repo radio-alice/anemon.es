@@ -2,9 +2,9 @@
   pointer-events: all;
   z-index: -10;
   position: absolute;
-  grid-row-gap: 25em;
-  grid-column-gap: 10em;
-  margin: 10rem;
+  grid-row-gap: 20em;
+  grid-column-gap: 5em;
+  margin: 5rem;
   top: 0;
   left: 0;
   height: 150%;
@@ -12,8 +12,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: '. zach . shrmn' 'owl owl owl .' 'writing . . code' 'arena . . e-worm' '. hang hang .';
+  grid-template-areas: '. zach . shrmn' 'owl owl owl .' 'writing . . e-worm' 'arena arena . code';
 }
+
+.info > div > * {
+  padding: 2rem;
+}
+
 p,
 ul,
 li,
@@ -23,7 +28,9 @@ a {
 
 ul {
   list-style-type: '↝';
-  padding: 0;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0;
 }
 ul li {
   padding: 1rem;
@@ -31,22 +38,39 @@ ul li {
 
 .zach {
   grid-area: zach;
+  border: 4px dashed darkcyan;
+  white-space: nowrap;
+  position: relative;
+  right: 5rem;
 }
 
 .code {
   grid-area: code;
+  position: relative;
+  top: 10rem;
 }
 
 .owl {
   grid-area: owl;
+  border-left: 4px solid darkblue;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .e-worm {
   grid-area: e-worm;
 }
+.e-worm > * {
+  border: 4px solid fuchsia;
+}
 
 .writing {
   grid-area: writing;
+  white-space: nowrap;
+}
+.writing > * {
+  border-bottom: 4px double black;
+  border-top: 4px double black;
 }
 
 .shrmn {
@@ -56,7 +80,19 @@ ul li {
 .arena {
   grid-area: arena;
 }
+.arena > * {
+  border: 4px dotted blue;
+}
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
 .hang {
-  grid-area: hang;
+  box-shadow: -1rem 1rem blue;
+}
+
+.about {
+  white-space: nowrap;
 }
