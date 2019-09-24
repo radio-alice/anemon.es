@@ -1,4 +1,4 @@
-.info {
+#info {
   pointer-events: all;
   z-index: -10;
   position: absolute;
@@ -15,7 +15,7 @@
   grid-template-areas: '. zach . shrmn' 'owl owl owl .' 'writing . . e-worm' 'arena arena . code';
 }
 
-.info > div > * {
+#info > div > * {
   padding: 2rem;
 }
 
