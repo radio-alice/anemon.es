@@ -2,13 +2,15 @@ html body {
   margin: 0;
   padding: 0;
   pointer-events: none;
+  min-height: 100%;
   max-width: 100%;
 }
-.bg {
+
+#bg {
   pointer-events: none;
   height: 620vh;
 }
-.background-creatures {
+#background-creatures {
   display: grid;
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
@@ -20,10 +22,10 @@ html body {
   overflow: hidden;
   z-index: 0;
 }
-.bg * {
+#bg * {
   pointer-events: none;
 }
-.background-creatures div {
+#background-creatures div {
   position: relative;
 }
 img {
@@ -31,46 +33,46 @@ img {
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
 }
-.spsh {
+#spsh {
   width: 100%;
   text-align: center;
 }
-.spsh img {
+#spsh img {
   transform: scale(2);
 }
 
-.lobey {
+#lobey {
   grid-area: lobey;
 }
-.lobey img {
+#lobey img {
   transform: scale(2.5) rotate(-8deg);
   position: absolute;
   top: -50%;
   z-index: -10;
 }
 
-.braing {
+#braing {
   grid-area: braing;
 }
-.braing img {
+#braing img {
   transform: scale(2);
   position: absolute;
   left: 50%;
 }
 
-.flong {
+#flong {
   grid-area: flong;
 }
-.flong img {
+#flong img {
   transform: scale(3) rotate(-10deg);
   position: absolute;
   bottom: 30%;
   left: 10rem;
 }
-.stoneyboy {
+#stoneyboy {
   grid-area: stoneyboy;
 }
-.stoneyboy img {
+#stoneyboy img {
   transform: scale(3);
   position: absolute;
   bottom: 20%;
@@ -78,20 +80,20 @@ img {
   z-index: -12;
 }
 
-.nipply {
+#nipply {
   grid-area: nipply;
 }
-.nipply img {
+#nipply img {
   transform: scale(4) rotate(-60deg);
   position: absolute;
   top: 20%;
   left: 80%;
 }
 
-.branchy {
+#branchy {
   grid-area: branchy;
 }
-.branchy img {
+#branchy img {
   transform: rotate(90deg) scale(2);
   position: absolute;
   left: 15%;
@@ -99,10 +101,10 @@ img {
   z-index: -8;
 }
 
-.babys {
+#babys {
   grid-area: babys;
 }
-.babys img {
+#babys img {
   transform: scale(2.5, 3) rotate(-10deg);
   position: absolute;
   top: 10%;
@@ -110,38 +112,38 @@ img {
   z-index: -9;
 }
 
-.funk {
+#funk {
   grid-area: funk;
 }
-.funk img {
+#funk img {
   transform: rotate(-90deg) scale(3);
   position: absolute;
   right: 4rem;
   top: 40%;
 }
 
-.tentacle {
+#tentacle {
   grid-area: tentacle;
 }
-.tentacle img {
+#tentacle img {
   transform: scale(6) rotate(70deg);
   position: absolute;
   left: 10%;
 }
 
-.florb {
+#florb {
   grid-area: florb;
 }
-.florb img {
+#florb img {
   transform: rotate(80deg) scale(2);
   position: relative;
   top: 9rem;
 }
 
-.funkd {
+#funkd {
   grid-area: funkd;
 }
-.funkd img {
+#funkd img {
   transform: rotate(-70deg) scale(2);
   position: absolute;
   top: 8rem;
