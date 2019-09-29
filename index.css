@@ -2,27 +2,68 @@
   font-family: 'Gap';
   src: url('./fonts/GapSansBold.ttf');
 }
-#info {
-  font-family: 'Gap';
-  letter-spacing: 0.25rem;
-  pointer-events: all;
-  z-index: -10;
-  position: absolute;
-  grid-row-gap: 20em;
-  grid-column-gap: 5em;
-  margin: 5rem;
-  top: 0;
-  left: 0;
-  height: 150%;
-  max-width: 80rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: '. zach . shrmn' 'owl owl owl .' 'writing . . e-worm' 'arena arena . code';
+@media all and (min-width: 400px) {
+  #info {
+    font-family: 'Gap';
+    letter-spacing: 0.25rem;
+    pointer-events: all;
+    z-index: -10;
+    position: absolute;
+    row-gap: 20rem;
+    column-gap: 5rem;
+    margin: 5rem;
+    top: 0;
+    left: 0;
+    height: 150%;
+    max-width: 80rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-rows: repeat(5, 300px);
+    grid-template-areas: '. zach . shrmn' 'owl owl owl .' 'writing . . e-worm' 'arena arena . code';
+  }
+  #info > div > * {
+    padding: 2rem;
+  }
+  #zach {
+    grid-area: zach;
+    white-space: nowrap;
+    position: relative;
+    right: 5rem;
+  }
+  #code {
+    grid-area: code;
+    position: relative;
+    top: 10rem;
+  }
 }
-
-#info > div > * {
-  padding: 2rem;
+@media all and (max-width: 400px) {
+  #info {
+    /* margin-top: 15rem; */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+  }
+  #info div {
+    margin: 2rem;
+    margin-top: 6rem;
+  }
+  #zach {
+    position: relative;
+    left: 6rem;
+    top: 2rem;
+    width: 10rem;
+  }
+  #owl {
+    margin-top: 12rem !important;
+  }
+  #spsh {
+    overflow-x: hidden;
+  }
 }
 
 p,
@@ -42,18 +83,8 @@ ul li {
   padding: 1rem;
 }
 
-#zach {
-  grid-area: zach;
+#zach p {
   border: 4px dashed darkcyan;
-  white-space: nowrap;
-  position: relative;
-  right: 5rem;
-}
-
-#code {
-  grid-area: code;
-  position: relative;
-  top: 10rem;
 }
 
 #owl {
@@ -72,7 +103,6 @@ ul li {
 
 #writing {
   grid-area: writing;
-  white-space: nowrap;
 }
 #writing > * {
   border-bottom: 4px double black;
@@ -99,8 +129,4 @@ footer {
 }
 #hang {
   box-shadow: -1rem 1rem blue;
-}
-
-#about {
-  white-space: nowrap;
 }
