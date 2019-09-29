@@ -5,11 +5,7 @@ import {
   PingPongDelay,
   Synth,
   Pattern,
-  Transport,
-  StereoEffect,
-  StereoXFeedbackEffect,
-  Context,
-  Crossfade
+  Transport
 } from 'tone'
 import throttle from 'lodash.throttle'
 new Rellax('.rellax')
