@@ -12,6 +12,6 @@
   },
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html --public-url ./ --no-source-maps"
+    "build": "parcel build index.html --public-url ./"
   }
 }
