@@ -29,7 +29,7 @@ const arpA = new Tone.Pattern(
   ['D4', 'C4', 'G3', 'E3', 'D3', 'C3'],
   'random'
 )
-arpA.playbackRate = 1
+arpA.playbackRate = 0
 arpA.start(1)
 Tone.Transport.start()
 
@@ -40,7 +40,7 @@ window.addEventListener(
     arpA.playbackRate = Math.sqrt(speed)
     setTimeout(() => {
       arpA.playbackRate = 0
-    }, 500)
+    }, 400)
   }, 200)
 )
 
