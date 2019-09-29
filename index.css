@@ -12,6 +12,7 @@
     row-gap: 20rem;
     column-gap: 5rem;
     margin: 5rem;
+    position: absolute;
     top: 0;
     left: 0;
     height: 150%;
