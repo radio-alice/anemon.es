@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'Gap';
+  src: url('./fonts/GapSansBold.ttf');
+}
 #info {
+  font-family: 'Gap';
+  letter-spacing: 0.25rem;
   pointer-events: all;
   z-index: -10;
   position: absolute;
@@ -85,6 +91,8 @@ ul li {
 }
 
 footer {
+  font-family: 'Gap';
+  letter-spacing: 0.25rem;
   display: flex;
   justify-content: space-around;
   margin-bottom: 3rem;
