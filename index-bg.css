@@ -4,6 +4,7 @@ html body {
   pointer-events: none;
   min-height: 100%;
   max-width: 100%;
+  background-color: rgb(221, 225, 255);
 }
 
 #bg {
