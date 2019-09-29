@@ -5,6 +5,7 @@
   "author": "zach sherman",
   "license": "MIT",
   "dependencies": {
+    "lodash.throttle": "^4.1.1",
     "parcel-bundler": "^1.12.3",
     "rellax": "^1.10.0",
     "tone": "^13.8.25"

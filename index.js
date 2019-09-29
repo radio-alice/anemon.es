@@ -1,8 +1,9 @@
 import Rellax from 'rellax'
 import Tone from 'tone'
+import throttle from 'lodash.throttle'
 new Rellax('.rellax')
 
-const limiter = new Tone.Limiter(-30).toMaster()
+const limiter = new Tone.Limiter(-20).toMaster()
 const synth = new Tone.PolySynth(4, Tone.Synth, {
   oscillator: {
     type: 'fattriangle',
@@ -13,9 +14,9 @@ const synth = new Tone.PolySynth(4, Tone.Synth, {
   },
   envelope: {
     attack: 0.2,
-    decay: 0.01,
+    decay: 0.1,
     sustain: 1,
-    release: 4
+    release: 3
   }
 })
 const ppDelay = new Tone.PingPongDelay(0.5, 0.5).connect(limiter)
@@ -26,22 +27,25 @@ const arpA = new Tone.Pattern(
     synth.triggerAttackRelease(note, 0.5, time)
   },
   ['D4', 'C4', 'G3', 'E3', 'D3', 'C3'],
-  'upDown'
+  'random'
 )
-arpA.playbackRate = 0
-arpA.start(0)
+arpA.playbackRate = 1
+arpA.start(1)
 Tone.Transport.start()
 
-window.onscroll = () => {
-  arpA.playbackRate = Math.sqrt(checkScrollSpeed()) * 2
-}
+window.addEventListener(
+  'scroll',
+  throttle(() => {
+    let speed = checkScrollSpeed()
+    arpA.playbackRate = Math.sqrt(speed)
+    setTimeout(() => {
+      arpA.playbackRate = 0
+    }, 500)
+  }, 200)
+)
 
 const checkScrollSpeed = (() => {
-  var lastPos,
-    newPos,
-    timer,
-    delta,
-    delay = 30
+  var lastPos, newPos, delta
   const maxScroll = document.body.scrollHeight
 
   const clear = () => {
@@ -57,10 +61,8 @@ const checkScrollSpeed = (() => {
       delta = Math.abs(newPos - lastPos)
     }
     lastPos = newPos
-    clearTimeout(timer)
-    timer = setTimeout(clear, delay)
 
-    if (delta < 3 || newPos > maxScroll - 800 || newPos < 1) {
+    if (delta < 30 || newPos > maxScroll - 800 || newPos < 1) {
       delta = 0
     }
     return delta
