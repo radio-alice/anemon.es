@@ -1,10 +1,17 @@
 import Rellax from 'rellax'
-import Tone from 'tone'
+import {
+  Limiter,
+  PolySynth,
+  PingPongDelay,
+  Synth,
+  Pattern,
+  Transport
+} from 'tone'
 import throttle from 'lodash.throttle'
 new Rellax('.rellax')
 
-const limiter = new Tone.Limiter(-20).toMaster()
-const synth = new Tone.PolySynth(4, Tone.Synth, {
+const limiter = new Limiter(-20).toMaster()
+const synth = new PolySynth(4, Synth, {
   oscillator: {
     type: 'fattriangle',
     partials: [0, 2, 3, 4],
@@ -19,10 +26,10 @@ const synth = new Tone.PolySynth(4, Tone.Synth, {
     release: 3
   }
 })
-const ppDelay = new Tone.PingPongDelay(0.5, 0.5).connect(limiter)
+const ppDelay = new PingPongDelay(0.5, 0.5).connect(limiter)
 synth.connect(ppDelay)
 
-const arpA = new Tone.Pattern(
+const arpA = new Pattern(
   (time, note) => {
     synth.triggerAttackRelease(note, 0.5, time)
   },
@@ -31,7 +38,7 @@ const arpA = new Tone.Pattern(
 )
 arpA.playbackRate = 0
 arpA.start(1)
-Tone.Transport.start()
+Transport.start()
 
 window.addEventListener(
   'scroll',
