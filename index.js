@@ -37,8 +37,11 @@ const arpA = new Pattern(
   'random'
 )
 arpA.playbackRate = 0
-arpA.start(1)
-Transport.start()
+document.getElementById('tones').addEventListener('click', () => {
+  arpA.start(1)
+  Transport.start()
+  document.getElementById('tones').remove()
+})
 
 window.addEventListener(
   'scroll',
