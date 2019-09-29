@@ -28,28 +28,31 @@ const synth = new PolySynth(4, Synth, {
 })
 const ppDelay = new PingPongDelay(0.5, 0.5).connect(limiter)
 synth.connect(ppDelay)
+let arpA
+document.getElementById('tones').addEventListener('click', () => {
+  arpA = new Pattern(
+    (time, note) => {
+      synth.triggerAttackRelease(note, 0.5, time)
+    },
+    ['D4', 'C4', 'G3', 'E3', 'D3', 'C3'],
+    'random'
+  )
+  arpA.playbackRate = 0
+  arpA.start(1)
+  Transport.start()
+  document.getElementById('tones').remove()
 
-const arpA = new Pattern(
-  (time, note) => {
-    synth.triggerAttackRelease(note, 0.5, time)
-  },
-  ['D4', 'C4', 'G3', 'E3', 'D3', 'C3'],
-  'random'
-)
-arpA.playbackRate = 0
-arpA.start(1)
-Transport.start()
-
-window.addEventListener(
-  'scroll',
-  throttle(() => {
-    let speed = checkScrollSpeed()
-    arpA.playbackRate = Math.sqrt(speed)
-    setTimeout(() => {
-      arpA.playbackRate = 0
-    }, 400)
-  }, 200)
-)
+  window.addEventListener(
+    'scroll',
+    throttle(() => {
+      let speed = checkScrollSpeed()
+      arpA.playbackRate = Math.sqrt(speed)
+      setTimeout(() => {
+        arpA.playbackRate = 0
+      }, 400)
+    }, 200)
+  )
+})
 
 const checkScrollSpeed = (() => {
   var lastPos, newPos, delta

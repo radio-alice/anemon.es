@@ -131,3 +131,9 @@ footer {
 #hang {
   box-shadow: -1rem 1rem blue;
 }
+#tones {
+  color: fuchsia;
+  cursor: pointer;
+  text-decoration: underline;
+  text-shadow: 0.25rem 0.25rem blue;
+}
