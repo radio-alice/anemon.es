@@ -1,8 +1,8 @@
 import Rellax from 'rellax'
+import Tone from 'tone'
 new Rellax('.rellax')
 
-import Tone from 'Tone'
-
+const limiter = new Tone.Limiter(-30).toMaster()
 const synth = new Tone.PolySynth(4, Tone.Synth, {
   oscillator: {
     type: 'fattriangle',
@@ -18,8 +18,9 @@ const synth = new Tone.PolySynth(4, Tone.Synth, {
     release: 4
   }
 })
-const ppDelay = new Tone.PingPongDelay(0.5, 0.5).toMaster()
+const ppDelay = new Tone.PingPongDelay(0.5, 0.5).connect(limiter)
 synth.connect(ppDelay)
+
 const arpA = new Tone.Pattern(
   (time, note) => {
     synth.triggerAttackRelease(note, 0.5, time)
