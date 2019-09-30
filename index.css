@@ -130,6 +130,7 @@ footer {
   display: flex;
   justify-content: space-around;
   margin-bottom: 3rem;
+  pointer-events: all;
 }
 #hang {
   box-shadow: -1rem 1rem blue;
