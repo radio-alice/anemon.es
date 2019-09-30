@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Faune-Display_Black';
+  src: url('/fonts/Faune-Display_Black.woff');
+}
+@font-face {
+  font-family: 'Faune-Display_Thin';
+  src: url('/fonts/Faune-Display_Thin.woff');
+}
+@font-face {
+  font-family: 'Faune-Display_Bold_Italic';
+  src: url('/fonts/Faune-Display_Bold_Italic.woff');
+}
+@font-face {
+  font-family: 'Faune-Text_Bold';
+  src: url('/fonts/Faune-Text_Bold.woff');
+}
+@font-face {
+  font-family: 'Faune-Text_Italic';
+  src: url('/fonts/Faune-Text_Italic.woff');
+}
+@font-face {
+  font-family: 'Faune-Text_Regular';
+  src: url('/fonts/Faune-Text_Regular.woff');
+}
+@font-face {
+  font-family: 'Laureate';
+  src: url('/fonts/Laureate.woff');
+}
+@font-face {
+  font-family: 'Alice';
+  src: url('/fonts/Alice.woff');
+}
+@font-face {
+  font-family: 'Brevier';
+  src: url('/fonts/BrevierViennese-Regular.woff');
+}
+@font-face {
+  font-family: 'Zarathustra';
+  src: url('/fonts/Zarathustra.woff');
+}
+@font-face {
+  font-family: 'ArbutusSlab';
+  src: url('/fonts/ArbutusSlab.woff');
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('/fonts/Bitter.woff');
+}
+@font-face {
+  font-family: 'BioRhyme';
+  src: url('/fonts/BioRhyme.woff');
+}

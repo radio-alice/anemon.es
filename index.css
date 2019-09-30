@@ -75,11 +75,14 @@ a {
 }
 
 ul {
-  list-style-type: '↝';
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   margin: 0;
+  list-style: none;
+  padding-left: 1em;
+  text-indent: -1em;
 }
+
 ul li {
   padding: 1rem;
 }
