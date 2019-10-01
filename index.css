@@ -144,3 +144,6 @@ footer {
   background-color: rgb(138, 151, 253);
   z-index: 100;
 }
+a {
+  color: fuchsia !important;
+}
