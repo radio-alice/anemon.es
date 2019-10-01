@@ -142,4 +142,5 @@ footer {
   text-shadow: 0.25rem 0.25rem blue;
   box-shadow: 0.25rem 0.25rem blue;
   background-color: rgb(138, 151, 253);
+  z-index: 100;
 }
