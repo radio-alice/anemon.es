@@ -1,0 +1,28 @@
+Things I want:
+- a site for comparing programming languages or other bits of tech stacks with actual hand-written copy about the differences between two / why to use one or another
+
+- a site that aggregates tutorials for shit I want to learn how to do - and lets me pay people a little bit if I appreciate their tutorial
+
+- a public log of my work, maybe organized by start of day and like the event log for each day is expandable behind the start of day
+
+- a cute way to chat my friends (public and private channels)
+
+- cute music production tools that just spit out notes rather than asking me to arrange them in a grid or locking me into boring rhythms
+
+- a collaborative website builder for non-coders and coders alike
+
+- a foss drag and drop website builder
+
+- a way to see what everyone is working on that's not Twitter and maybe public events on here too
+
+- a robust solderless diy hardware setup (like littlebits for any electronics)
+
+- a site for pairing freelance devs/designers with clients that's built around the client pitching their project rather than the dev pitching their skills
+
+- always on video channel just for hanging when remote working
+
+- a cheaper, lower power VPS than the lowest DO option
+
+- simple diy screen printing
+
+- a tiny projector that sits on the corner of my laptop and projects a second screen down and to the side onto the surface my laptop is resting on
