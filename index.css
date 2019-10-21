@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: '. zach . shrmn' 'owl owl owl .' 'writing . . e-worm' 'arena arena . code';
+    grid-template-areas: '. zach . shrmn' 'owl owl owl .' 'arena arena . e-worm' 'writing . . code';
   }
   #info > div > * {
     padding: 2rem;
@@ -37,7 +37,7 @@
   #code {
     grid-area: code;
     position: relative;
-    top: 10rem;
+    bottom: 8rem;
   }
 }
 @media all and (max-width: 400px) {
@@ -264,6 +264,8 @@ ul li {
 
 #writing {
   grid-area: writing;
+  position: relative;
+  bottom: 8rem;
 }
 #writing > * {
   border-bottom: 4px double black;
