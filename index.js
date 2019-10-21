@@ -1,17 +1,7 @@
-import Rellax from 'rellax'
-import {
-  Limiter,
-  PolySynth,
-  PingPongDelay,
-  Synth,
-  Pattern,
-  Transport
-} from 'tone'
-import throttle from 'lodash.throttle'
 new Rellax('.rellax')
 
-const limiter = new Limiter(-20).toMaster()
-const synth = new PolySynth(4, Synth, {
+const limiter = new Tone.Limiter(-20).toMaster()
+const synth = new Tone.PolySynth(4, Tone.Synth, {
   oscillator: {
     type: 'fattriangle',
     partials: [0, 2, 3, 4],
@@ -26,11 +16,11 @@ const synth = new PolySynth(4, Synth, {
     release: 3
   }
 })
-const ppDelay = new PingPongDelay(0.5, 0.5).connect(limiter)
+const ppDelay = new Tone.PingPongDelay(0.5, 0.5).connect(limiter)
 synth.connect(ppDelay)
 let arpA
 document.getElementById('tones').addEventListener('click', () => {
-  arpA = new Pattern(
+  arpA = new Tone.Pattern(
     (time, note) => {
       synth.triggerAttackRelease(note, 0.5, time)
     },
@@ -39,12 +29,12 @@ document.getElementById('tones').addEventListener('click', () => {
   )
   arpA.playbackRate = 0
   arpA.start(1)
-  Transport.start()
+  Tone.Transport.start()
   document.getElementById('tones').remove()
 
   window.addEventListener(
     'scroll',
-    throttle(() => {
+    _.throttle(() => {
       let speed = checkScrollSpeed()
       arpA.playbackRate = Math.sqrt(speed)
       setTimeout(() => {
