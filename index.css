@@ -273,6 +273,9 @@ ul li {
 #shrmn {
   grid-area: shrmn;
 }
+#shrmn a {
+  padding: 0;
+}
 
 #arena {
   grid-area: arena;
