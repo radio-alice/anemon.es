@@ -2,6 +2,10 @@
   font-family: 'Gap';
   src: url('./fonts/GapSansBold.ttf');
 }
+@font-face {
+  font-family: 'Faune-Display_Bold_Italic';
+  src: url('/fonts/Faune-Display_Bold_Italic.woff');
+}
 @media all and (min-width: 400px) {
   #info {
     font-family: 'Gap';
@@ -27,7 +31,6 @@
   }
   #zach {
     grid-area: zach;
-    white-space: nowrap;
     position: relative;
     right: 5rem;
   }
@@ -222,7 +225,8 @@ img {
 p,
 ul,
 li,
-a {
+a,
+em {
   font-size: 1.5rem;
 }
 
@@ -241,6 +245,7 @@ ul li {
 
 #zach p {
   border: 4px dashed darkcyan;
+  margin-bottom: 3rem;
 }
 
 #owl {
@@ -284,17 +289,31 @@ footer {
   margin-bottom: 3rem;
   pointer-events: all;
 }
+#about {
+  padding-bottom: 2rem;
+}
 #hang {
   box-shadow: -1rem 1rem blue;
 }
+
 #tones {
-  color: fuchsia;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 10rem;
+  z-index: 100;
   cursor: pointer;
+  pointer-events: all;
+}
+#tones a {
+  color: fuchsia;
   text-decoration: underline;
   text-shadow: 0.25rem 0.25rem blue;
   box-shadow: 0.25rem 0.25rem blue;
   background-color: rgb(138, 151, 253);
-  z-index: 100;
+  font-family: 'Faune-Display_Bold_Italic';
+  padding: 2rem;
 }
 a {
   color: fuchsia !important;
