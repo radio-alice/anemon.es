@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Alice';
+  src: url('/fonts/Alice.woff');
+}
+@font-face {
+  font-family: 'Bitter';
+  src: url('/fonts/Bitter.woff');
+}
 body {
   max-width: 600px;
   margin: 0 auto;
