@@ -26,3 +26,9 @@ Things I want:
 - simple diy screen printing
 
 - a tiny projector that sits on the corner of my laptop and projects a second screen down and to the side onto the surface my laptop is resting on
+
+- blockchain designed from a cooperative/social ideology (instead of game theory)
+
+- p2p version of Meetup for small workshops
+
+- portable mesh network with cute little modems

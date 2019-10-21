@@ -1,0 +1,67 @@
+BBOY 2019
+----------
+A box with some knobs, some buttons and a cute smile
+
+He's too big for your pocket but small enough that you always throw him in your backpack
+
+You use him to call your mom when you miss her. Or to play videogames with your friends when the weather is not so nice.
+
+During parties he hosts a collaborative playlist that anyone can contribute to.
+
+When you're not using him he sleeps soundly, never interrupting you with distracting beeps or flashes.
+
+Whenever you want to do serious writing or thinking, you plug BBOY into a small monitor and keyboard. When you want to share that work with friends, you simply send them a link to the dat archive you were working in.
+
+Sometimes you feel crazy and want to make some weird electronoise. BBOY takes sounds that you sketch out with  your monitor or record in the world and let's you mangle them to your hearts content with his little knobs.
+
+Everything you do on BBOY is saved in files that are easy to share with others, no matter what computers or programs they use. When you want to move data off of BBOY, it's as easy as opening a link on another computer.
+
+Sometimes you can't find a BBOY program that does exactly what you'd like. So you connect him back to your monitor and search the net for little bits of code to plug together that do what you'd like. Because every program is just a list of functions for manipulating different types of data, it's pretty easy to make other people's code play nicely together just by translating between data types. There are a few core functions that help make programming BBOY as simple as possible: one to take in data from BBOY's knobs and buttons, one to draw pictures on his screen, one to play sounds through his speaker, and a few to help with connecting to other computers. These functions never change, so it's easy to make BBOY interact with the outside world. When you want to share a finished BBOY program, or you want some outside help with it, you can just share a link to its dat archive.
+
+You might want some of the files or programs you share from your BBOY might need to be accessible at all times, so he has a friend, CD, who never sleeps and automatically syncs and seeds all your public files for as long as you'd like.
+
+BBOY is also good at keeping secrets. If there's a file you never want anyone to see or something you made specially for one person, he will make sure that no one is ever peeking at things that they shouldn't be. He protects these files with a special lock that only your unique physical key can unlock. You can share encrypted bits of this key with friends so that if something happens to your key, they can help you make a new one.
+
+Sometimes you miss your old computer and your old phone– BBOY can't always help massage your brain the way they did. He can't play tv shows or addictive games or show you the latest tweet dunking on Nancy Pelosi. BBOY doesn't speed your life up or distract you from sadness. He just helps you to think patiently, goof off with your friends, and call your mom a little bit more often.
+--------------
+
+What does this need:
+- pico-8 esque programming platform
+    - with standard FNs that handle IO
+    - and a Haskell-like type system/syntax
+      (purescript ??)
+
+- a local TUI for visualizing app state:
+    - synth params
+    - who you're calling
+    - what song is playing
+    - small text games
+    - scroll through messages
+
+- a local (linux?) web server
+    - dat radio
+    - cuberite
+    - shared docs
+
+- dat seeder + dat integrations
+
+- a GUI for monitor
+    - writing notes
+    - mind mapping
+    - programming synths
+    - writing programs
+    - email
+    - editing songs / videos / photos ??
+
+- hardware IO
+    - knobs
+    - buttons + on/off
+    - mic
+    - speaker
+    - USB ports
+    - audio in + out
+    - WiFi (+ cell? ethernet?)
+    - screen
+    - hardware key
+
+HELP
