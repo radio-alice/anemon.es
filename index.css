@@ -6,7 +6,7 @@
   font-family: 'Faune-Display_Bold_Italic';
   src: url('/fonts/Faune-Display_Bold_Italic.woff');
 }
-@media all and (min-width: 400px) {
+@media all and (min-width: 450px) {
   #info {
     font-family: 'Gap';
     letter-spacing: 0.25rem;
@@ -26,9 +26,6 @@
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: '. zach . shrmn' 'owl owl owl .' 'arena arena . e-worm' 'writing . . code';
   }
-  #info > div > * {
-    padding: 2rem;
-  }
   #zach {
     grid-area: zach;
     position: relative;
@@ -40,9 +37,11 @@
     bottom: 8rem;
   }
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
   #info {
-    /* margin-top: 15rem; */
+    pointer-events: all;
+    font-family: 'Gap';
+    letter-spacing: 0.25rem;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -60,7 +59,7 @@
     position: relative;
     left: 6rem;
     top: 2rem;
-    width: 10rem;
+    width: 12rem;
   }
   #owl {
     margin-top: 12rem !important;
@@ -68,6 +67,14 @@
   #spsh {
     overflow-x: hidden;
   }
+  #writing {
+    grid-area: writing;
+    position: relative;
+    top: 4rem;
+  }
+}
+#info > div > * {
+  padding: 2rem;
 }
 html body {
   margin: 0;
