@@ -10,24 +10,27 @@
   font-family: "Faune-Text_Regular";
   src: url("/fonts/Faune-Text_Regular.woff");
 }
-html {
+.bg-pink {
   background-color: rgb(255, 233, 239);
+}
+.text-purple {
+  color: rgb(32, 0, 75);
+}
+html {
   overflow-x: hidden;
 }
 ::selection {
   background: rgb(255, 244, 97);
 }
-p,
-li,
-header h2 {
+.font-faune {
   line-height: 1.5em;
   font-family: "Faune-Text_Regular";
 }
-h1 {
+.font-mixo {
   font-family: "Mixo";
   font-size: 4em;
 }
-h2 {
+.font-format {
   line-height: 1.5em;
   font-family: "Format";
   font-size: 2em;
@@ -39,50 +42,56 @@ em {
 p {
   font-size: 1.1em;
 }
-header {
+a {
+  color: rgb(240, 10, 209);
+  font-weight: bold;
+}
+.center {
   margin: 0 auto;
+}
+.flex-row {
   display: flex;
+  flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: space-around;
-  color: rgb(32, 0, 75);
 }
-header > * {
+.flex-row > * {
   flex: 1;
   max-width: 400px;
   margin: 3em;
 }
-header h2 {
+.flex-row h2 {
   font-size: 1.5em;
 }
-main {
+.columns {
   columns: 450px auto;
 }
-main > * {
+.columns > * {
   max-width: 450px;
   padding: 2em;
   display: inline-block;
 }
-main > * + * {
+.columns > * + * {
   margin-top: 5em;
 }
-address {
-  padding-left: 2em;
-  font-size: 1em;
+.font-bold {
   font-weight: bold;
 }
-#skills {
+.padding-left {
+  padding-left: 2em;
+}
+.bg-blue {
   background-color: darkblue;
-  margin-top: 0;
+}
+.text-pink {
   color: pink;
 }
-#resume,
-.work-section {
+.box-shadow-blue {
   border: solid 3px cornflowerblue;
   box-shadow: 1em 1em darkblue;
   background-color: rgb(245, 236, 237);
 }
-#resume:active,
-.work-section:active {
+.box-shadow-blue:active {
   box-shadow: none;
   transform: translate(1em, 1em);
 }
@@ -111,16 +120,11 @@ li + li {
   pointer-events: none;
   transform: translate(-50px, -100px);
 }
-a {
-  color: rgb(240, 10, 209);
-  font-weight: bold;
-}
-#resume {
-  max-width: 300px;
-  max-height: 50px;
+.button {
+  max-width: 200px;
   text-align: center;
-  vertical-align: middle;
-  padding: 1em;
   font-size: 1.25em;
-  margin: 0 0 2em 2em;
+}
+.no-top {
+  margin-top: 0;
 }
