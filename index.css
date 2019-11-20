@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Gap';
-  src: url('./fonts/GapSansBold.ttf');
+  font-family: "Gap";
+  src: url("./fonts/GapSansBold.ttf");
 }
 @font-face {
-  font-family: 'Faune-Display_Bold_Italic';
-  src: url('/fonts/Faune-Display_Bold_Italic.woff');
+  font-family: "Faune-Display_Bold_Italic";
+  src: url("/fonts/Faune-Display_Bold_Italic.woff");
 }
 @media all and (min-width: 450px) {
   #info {
-    font-family: 'Gap';
+    font-family: "Gap";
     letter-spacing: 0.25rem;
     pointer-events: all;
     z-index: -10;
@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: '. zach . shrmn' 'owl owl owl .' 'arena arena . e-worm' 'writing . . code';
+    grid-template-areas: ". zach . shrmn" "owl owl . ." "arena arena . e-worm" "writing . . code";
   }
   #zach {
     grid-area: zach;
@@ -40,7 +40,7 @@
 @media all and (max-width: 450px) {
   #info {
     pointer-events: all;
-    font-family: 'Gap';
+    font-family: "Gap";
     letter-spacing: 0.25rem;
     max-width: 100%;
     display: flex;
@@ -95,7 +95,7 @@ html body {
   grid-row-gap: 3rem;
   grid-template-rows: auto auto auto auto;
   grid-auto-columns: auto auto auto auto;
-  grid-template-areas: 'florb . . funkd' 'tentacle tentacle babys lobey' 'branchy branchy branchy funk' 'stoneyboy flong nipply braing';
+  grid-template-areas: "florb . . funkd" "tentacle tentacle babys lobey" "branchy branchy branchy funk" "stoneyboy flong nipply braing";
   max-width: 100vw;
   height: 600vh;
   overflow: hidden;
@@ -259,8 +259,10 @@ ul li {
 #owl {
   grid-area: owl;
   border-left: 4px solid darkblue;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+}
+#owl p {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #e-worm {
@@ -295,7 +297,7 @@ ul li {
 }
 
 footer {
-  font-family: 'Gap';
+  font-family: "Gap";
   letter-spacing: 0.25rem;
   display: flex;
   justify-content: space-around;
@@ -319,6 +321,7 @@ footer {
   z-index: 100;
   cursor: pointer;
   pointer-events: all;
+  text-align: center;
 }
 #tones a {
   color: fuchsia;
@@ -326,7 +329,7 @@ footer {
   text-shadow: 0.25rem 0.25rem blue;
   box-shadow: 0.25rem 0.25rem blue;
   background-color: rgb(138, 151, 253);
-  font-family: 'Faune-Display_Bold_Italic';
+  font-family: "Faune-Display_Bold_Italic";
   padding: 2rem;
 }
 a {
