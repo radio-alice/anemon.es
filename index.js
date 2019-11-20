@@ -1,3 +1,7 @@
+const elements = document.querySelectorAll('#info p, #info a, footer li')
+document.onmousemove = event =>
+  elements.forEach(element => applyShadow(event, element, 'pink', 5))
+
 new Rellax('.rellax')
 
 const limiter = new Tone.Limiter(-20).toMaster()
