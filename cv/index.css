@@ -36,9 +36,6 @@ html {
   font-size: 2em;
   margin-top: 0;
 }
-em {
-  font-size: 1.15em;
-}
 p {
   font-size: 1.1em;
 }
@@ -123,6 +120,8 @@ a {
 .border-light {
   border: 2px dashed lightgray;
 }
+video,
 img {
   width: 100%;
+  height: auto;
 }
