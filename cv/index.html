@@ -64,7 +64,7 @@
           <h3 class="no-top">
             ♒︎
             <a href="https://streams.thomasbeta1.now.sh/" target="_blank"
-              >Streams</a
+              >Streams: vGitHub</a
             >
             (<a href="https://github.com/openworklabs/streams" target="_blank"
               >source code</a
@@ -73,14 +73,65 @@
           <p>
             Streams is an experimental product that creates shareable feeds of
             your work; the prototype linked above organizes GitHub events for
-            any given repo. I was entirely responsible for the visual design and
-            its implementation. I also contributed significant amounts of user
-            research and application logic (using react + redux).
+            any given repo. We iterated on GitHub protoypes over the course of
+            four design sprints, the last two of which we're led by me–
+            sketching, prototyping, and user-testing a variety of organizational
+            schemes for your GitHub events. First we decided to simply present a
+            firehose of events, with composable filters being the only way to
+            organize. Based on user-tests, the next iterations experimented with
+            variety of schemas for grouping events. We found that for the most
+            part, people wanted to use this tool to keep track of others' work
+            not their own. So in the iteration linked above, we chose to group
+            events by branch and pull request– balancing concise high-level
+            overviews of others' work, with the ability to quickly view any
+            details that interest you. If I were to run another design sprint
+            for this prototype, I would add the ability to visualize events
+            across multiple repos. I would also move the filters and title to
+            the side or to a drawer, so that the groups of events become the
+            center of the interface. Our hypothesis was that people would use
+            this to view events (and groups of events), so events should be
+            given visual precedence over the filters and title.
           </p>
           <img
             alt="a list of GitHub events ordered by time and group according to their metadata"
             src="/assets/streams.png"
             class="center"
+          />
+          <p>
+            For these experiments, I was entirely responsible for the visual
+            design and its implementation. I also contributed significant
+            amounts of prior user research and application logic (using react +
+            redux).
+          </p>
+        </section>
+        <section class="box-shadow-blue padding-lr padding-tb">
+          <h3 class="no-top">
+            ♒︎
+            <a
+              href="https://www.figma.com/file/aJQbkpxciKyGFmrEYGifFS/resource-logs?node-id=21%3A681"
+              target="_blank"
+              >Streams: vLinks</a
+            >
+          </h3>
+          <p>
+            This next <em>Streams</em> design sprint was led entirely by me. The
+            goal of this sprint was to design a product for sharing your work
+            with collaborators while substituting the work of app integrations
+            (like GitHub) with manual updates by users themselves. I wanted to
+            find out if all the hassle with different applications' event APIs
+            was worth it or if people would use a separate product that asked
+            them to manually keep track of changes to resources (represented by
+            links). For this sprint I decided to test the figma prototype
+            itself, rather than taking the time to build a working version
+            before we knew if people even wanted it. I conducted four user tests
+            and concluded that the current iteration did not offer enough of an
+            improvement over in-app communication to convince people to use it,
+            so we decided not to build it and saved ourselves significant
+            development time.
+          </p>
+          <img
+            src="/assets/streams_figma.png"
+            alt="a screenshot of a figma prototype of an inbox full of links, each with its own set of comments"
           />
         </section>
         <section class="box-shadow-blue padding-lr padding-tb">
@@ -191,7 +242,7 @@
             >, and many others.
           </p>
           <br />
-          <em>Not your cookie-cutter bootcamp JS dev</em>
+          <!-- <em>Not your cookie-cutter bootcamp JS dev</em> -->
         </div>
       </section>
       <fieldset class="space-children font-faune border-light padding-lr">
@@ -393,7 +444,7 @@
             <source src="/assets/Planets.mp4" type="video/mp4" />
           </video>
         </section>
-        <section class="box-shadow-blue padding-lr">
+        <!-- <section class="box-shadow-blue padding-lr">
           <h3>
             <a href="https://github.com/radio-alice/wasm-rust-GoL"
               >Game of Life</a
@@ -407,13 +458,13 @@
             made me really appreciate Rust's borrow checker and pattern
             matching, especially when compared to a language like C.
           </p>
-        </section>
+        </section> -->
       </fieldset>
     </main>
     <script>
       const elements = document.querySelectorAll('a, h1')
       document.onmousemove = event =>
-        elements.forEach(element => applyShadow(event, element, 'blue', 3))
+        elements.forEach(element => applyShadow(event, element, 'blue', 0.1))
     </script>
   </body>
 </html>
