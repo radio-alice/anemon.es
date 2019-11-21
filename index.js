@@ -1,6 +1,6 @@
 const elements = document.querySelectorAll('#info p, #info a, footer li')
 document.onmousemove = event =>
-  elements.forEach(element => applyShadow(event, element, 'pink', 5))
+  elements.forEach(element => applyShadow(event, element, 'pink', 0.15))
 
 new Rellax('.rellax')
 

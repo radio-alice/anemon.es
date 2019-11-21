@@ -27,8 +27,8 @@ const adjustOffsets = distance => {
   const magnitude = Math.sqrt(Math.pow(distance.x, 2) + Math.pow(distance.y, 2))
 
   return {
-    x: distance.x / magnitude,
-    y: distance.y / magnitude
+    x: (1 - distance.x) / magnitude,
+    y: (1 - distance.y) / magnitude
   }
 }
 
@@ -36,5 +36,5 @@ const adjustOffsets = distance => {
 const applyShadow = (event, element, color, scalar) => {
   const elementLocation = getElementLocation(element)
   const { x, y } = adjustOffsets(getDistanceToElement(event, elementLocation))
-  element.style.textShadow = `${x * scalar}px ${y * scalar}px ${color}`
+  element.style.textShadow = `${x * scalar}em ${y * scalar}em ${color}`
 }
