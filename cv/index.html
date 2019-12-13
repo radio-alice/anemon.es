@@ -8,57 +8,139 @@
     <link rel="stylesheet" href="index.css" />
     <script src="../libs/shadowBB.js"></script>
   </head>
-  <body class="bg-pink">
+  <body class="bg-pink center">
     <!-- look around -->
     <!-- drink it all in -->
     <!-- check out the css too -->
-    <header class="text-purple flex-row center">
-      <address class="font-bold padding-left">
-        <p>⌇ <a href="mailto:zach@anemon.es">zach [at] anemon.es</a></p>
-        <p>
-          ⌇
-          <a href="http://github.com/radio-alice" target="_blank">github ⤴️</a>
-        </p>
-        <p>
-          ⌇
-          <a href="http://are.na/zach-sherman" target="_blank">are.na ⤴️</a>
-        </p>
-        <p>⌇ San Francisco</p>
-      </address>
-      <div>
-        <h1 class="font-mixo">Zach Sherman</h1>
-        <h2 class="font-faune">
-          I research, design and build cute humane tech
-        </h2>
-      </div>
-      <a href="/assets/Sherman_resume.pdf">
-        <div class="button font-format box-shadow-blue">
-          <h2>RESUME.PDF</h2>
-        </div></a
-      >
-    </header>
-    <main class="space-children column center">
+    <ul class="tabs flex-row flex-center bg-blue text-pink font-format">
+      <li data-tab-target="#about" class="active">yup it's me</li>
+      <li data-tab-target="#owl">Open Work Labs</li>
+      <li data-tab-target="#uc">UChicago</li>
+      <li data-tab-target="#personal">
+        personal projects
+      </li>
+    </ul>
+    <main>
       <fieldset
-        class="space-children font-faune no-top border-light padding-lr"
+        id="about"
+        data-tab-content
+        class="text-purple space-children font-faune no-top border-light padding-lr center active"
+      >
+        <legend class="font-mixo"><h1>Zach Sherman</h1></legend>
+        <h2 class="font-faune no-top">
+          I research, design and build open, humane tech
+        </h2>
+        <div class="flex-row between">
+          <address class="font-bold padding-left">
+            <p>⌇ <a href="mailto:zach@anemon.es">zach [at] anemon.es</a></p>
+            <p>
+              ⌇
+              <a href="http://github.com/radio-alice" target="_blank"
+                >github ⤴️</a
+              >
+            </p>
+            <p>
+              ⌇
+              <a href="http://are.na/zach-sherman" target="_blank">are.na ⤴️</a>
+            </p>
+            <p>⌇ San Francisco</p>
+          </address>
+          <a href="/assets/Sherman_resume.pdf">
+            <div class="button font-format box-shadow-blue padding-lr">
+              <h2>RESUME.PDF</h2>
+            </div></a
+          >
+        </div>
+        <section
+          class="bg-blue text-pink font-faune padding-lr padding-tb space-children"
+        >
+          <div>
+            <em>Things I'm good at</em>:
+            <p>
+              ↘︎ picking up new programming languages, frameworks, and tools
+            </p>
+            <p>↘︎ quickly sketching out designs and prototypes</p>
+            <p>
+              ↘︎ bringing a wide array of perspectives informed by years of
+              social sciences study and community organizing experiences
+            </p>
+            <p>↘︎ working outside the tech echo chamber</p>
+          </div>
+          <div>
+            <em>Tech I've used professionally:</em>
+            <p>
+              ↘︎ HTML/CSS/JS, React, Redux, NodeJS + Express, ImmutableJS, IPFS,
+              Git, Figma, Inkscape
+            </p>
+          </div>
+          <div>
+            <em
+              >Languages / tools I have experience with and would love to use at
+              work:</em
+            >
+            <p>
+              ↘︎ Haskell, Rust, Purescript, Elm, Racket, Webflow
+            </p>
+          </div>
+          <div>
+            <em
+              >People who have influenced how I think about computers, their
+              role in society, and our responsibilities as designers and
+              developers:</em
+            >
+            <p>
+              ↘︎
+              <a href="http://worrydream.com" target="_blank">Bret Victor</a>,
+              <a href="http://http://ted.hyperland.com/" target="_blank"
+                >Ted Nelson</a
+              >,
+              <a
+                href="https://en.wikipedia.org/wiki/Gilbert_Simondon"
+                target="_blank"
+                >Gilbert Simondon</a
+              >,
+              <a href="https://frnsys.com/" target="_blank">Francis Tseng</a>,
+              <a
+                href="https://pchiusano.github.io/2013-05-22/future-of-software.html"
+                target="_blank"
+                >Paul Chiusano</a
+              >,
+              <a href="http://laurelschwulst.com/" target="_blank"
+                >Laurel Schwulst</a
+              >, <a href="http://shiba.computer" target="_blank">Cade Diehm</a>,
+              the folks at
+              <a href="http://inkandswitch.com" target="_blank"
+                >Ink and Switch</a
+              >, and many others.
+            </p>
+            <br />
+            <!-- <em>Not your cookie-cutter bootcamp JS dev</em> -->
+          </div>
+        </section>
+      </fieldset>
+      <fieldset
+        id="owl"
+        data-tab-content
+        class="space-children font-faune no-top border-light padding-lr center"
       >
         <legend class="font-format">
           <a href="http://openworklabs.com" target="_blank">Open Work Labs</a>
-          (2019)
+          (July - Nov 2019)
         </legend>
         <h3 class="font-faune no-top">
           Software Engineer + Designer – Contract
         </h3>
         <p class="no-top">
           At OWL, my ability to quickly pick up new skills and eye for design
-          significantly increased team velocity. I created prototypes and
+          significantly increased team velocity. I designed systems that
+          encouraged user modification and customization, created prototypes and
           established a visual identity for an early-stage company that was
           still searching for product-market-fit. Working with experienced
           product developers, I conducted five design sprints over a period of
           five weeks, using user-testing results to iterate on product
           prototypes. Under the tutelage of senior JavaScript engineers my code
           became far more maintainable and declarative. I also gained extensive
-          experience working on in-production codebases built on top of
-          experimental decentralized-web technologies.
+          experience working with experimental decentralized-web technologies.
         </p>
         <section class="box-shadow-blue padding-lr padding-tb">
           <h3 class="no-top">
@@ -70,28 +152,32 @@
               >source code</a
             >):
           </h3>
-          <p>
-            Streams is an experimental product that creates shareable feeds of
-            your work; the prototype linked above organizes GitHub events for
-            any given repo. We iterated on GitHub protoypes over the course of
-            four design sprints, the last two of which we're led by me–
-            sketching, prototyping, and user-testing a variety of organizational
-            schemes for your GitHub events. First we decided to simply present a
-            firehose of events, with composable filters being the only way to
-            organize. Based on user-tests, the next iterations experimented with
-            variety of schemas for grouping events. We found that for the most
-            part, people wanted to use this tool to keep track of others' work
-            not their own. So in the iteration linked above, we chose to group
-            events by branch and pull request– balancing concise high-level
-            overviews of others' work, with the ability to quickly view any
-            details that interest you. If I were to run another design sprint
-            for this prototype, I would add the ability to visualize events
-            across multiple repos. I would also move the filters and title to
-            the side or to a drawer, so that the groups of events become the
-            center of the interface. Our hypothesis was that people would use
-            this to view events (and groups of events), so events should be
-            given visual precedence over the filters and title.
-          </p>
+          <details class="margin-bottom">
+            <summary class="pointer underline">Design process:</summary>
+            <p>
+              Streams is an experimental product that creates shareable feeds of
+              your work; the prototype linked above organizes GitHub events for
+              any given repo. We iterated on GitHub protoypes over the course of
+              four design sprints, the last two of which were led by me–
+              sketching, prototyping, and user-testing a variety of
+              organizational schemes for your GitHub events. First we decided to
+              simply present a firehose of events, with composable filters being
+              the only way to organize. Based on user-tests, the next iterations
+              experimented with variety of schemas for grouping events. We found
+              that for the most part, people wanted to use this tool to keep
+              track of others' work, not their own. So in the iteration linked
+              above, we chose to group events by branch and pull request–
+              balancing concise high-level overviews of others' work, with the
+              ability to quickly view any details that interest you. If I were
+              to run another design sprint for this prototype, I would add the
+              ability to visualize events across multiple repos and move the
+              filters and title to the side or to a drawer, so that the groups
+              of events become the center of the interface. Our hypothesis was
+              that people would use this to view events (and groups of events),
+              so events should be given visual precedence over the filters and
+              title.
+            </p>
+          </details>
           <img
             alt="a list of GitHub events ordered by time and group according to their metadata"
             src="/assets/streams.png"
@@ -113,25 +199,44 @@
               >Streams: vLinks</a
             >
           </h3>
-          <p>
-            This next <em>Streams</em> design sprint was led entirely by me. The
-            goal of this sprint was to design a product for sharing your work
-            with collaborators while substituting the work of app integrations
-            (like GitHub) with manual updates by users themselves. I wanted to
-            find out if all the hassle with different applications' event APIs
-            was worth it or if people would use a separate product that asked
-            them to manually keep track of changes to resources (represented by
-            links). For this sprint I decided to test the figma prototype
-            itself, rather than taking the time to build a working version
-            before we knew if people even wanted it. I conducted four user tests
-            and concluded that the current iteration did not offer enough of an
-            improvement over in-app communication to convince people to use it,
-            so we decided not to build it and saved ourselves significant
-            development time.
-          </p>
+          <details class="margin-bottom"
+            ><summary class="pointer underline">Design process:</summary>
+            <p>
+              This next <em>Streams</em> design sprint was led entirely by me.
+              The goal of this sprint was to design a product for sharing your
+              work with collaborators while substituting the work of app
+              integrations (like GitHub) with manual updates by users
+              themselves. I wanted to find out if all the hassle with different
+              applications' event APIs was worth it or if people would use a
+              separate product that asked them to manually keep track of changes
+              to resources (represented by links). For this sprint I decided to
+              test the figma prototype itself, rather than taking the time to
+              build a working version before we knew if people even wanted it. I
+              conducted four user tests and concluded that the current iteration
+              did not offer enough of an improvement over in-app communication
+              to convince people to use it, so we decided not to build it and
+              saved ourselves significant development time.
+            </p>
+          </details>
           <img
             src="/assets/streams_figma.png"
             alt="a screenshot of a figma prototype of an inbox full of links, each with its own set of comments"
+          />
+        </section>
+        <section class="box-shadow-blue padding-lr padding-tb">
+          <h3 class="no-top">
+            ☾
+            <a href="http://openworklabs.com" target="_blank">OWL website</a>
+            (<a href="https://github.com/openworklabs/site">source code</a>):
+          </h3>
+          <p>
+            I am responsible for all the design and code for the OWL site,
+            including the logo. I also contributed significantly to the copy.
+          </p>
+          <img
+            alt="a screenshot of a website with a really cool owl logo"
+            src="/assets/OWL.png"
+            class="center"
           />
         </section>
         <section class="box-shadow-blue padding-lr padding-tb">
@@ -154,22 +259,6 @@
         </section>
         <section class="box-shadow-blue padding-lr padding-tb">
           <h3 class="no-top">
-            ☾
-            <a href="http://openworklabs.com" target="_blank">OWL website</a>
-            (<a href="https://github.com/openworklabs/site">source code</a>):
-          </h3>
-          <p>
-            I am responsible for all the design and code for the OWL site,
-            including the logo. I also contributed significantly to the copy.
-          </p>
-          <img
-            alt="a screenshot of a website with a really cool owl logo"
-            src="/assets/OWL.png"
-            class="center"
-          />
-        </section>
-        <section class="box-shadow-blue padding-lr padding-tb">
-          <h3 class="no-top">
             ⚙︎
             <a href="http://aragon.org" target="_blank">Aragon</a>
           </h3>
@@ -182,77 +271,18 @@
           </p>
         </section>
       </fieldset>
-      <section
-        class="bg-blue text-pink font-faune padding-lr padding-tb space-children"
+      <fieldset
+        data-tab-content
+        id="uc"
+        class="space-children font-faune border-light padding-lr center"
       >
-        <div>
-          <em>Things I'm good at</em>:
-          <p>
-            ↘︎ picking up new programming languages, frameworks, and tools
-          </p>
-          <p>↘︎ quickly sketching out designs and prototypes</p>
-          <p>
-            ↘︎ bringing a wide array of perspectives informed by years of social
-            sciences study and research
-          </p>
-          <p>↘︎ working outside the tech echo chamber</p>
-        </div>
-        <div>
-          <em>Tech I've used professionally:</em>
-          <p>
-            ↘︎ HTML/CSS/JS, React, Redux, NodeJS, IPFS, Git, Figma, Inkscape
-          </p>
-        </div>
-        <div>
-          <em
-            >Languages / tools I have experience with and would love to use at
-            work:</em
-          >
-          <p>
-            ↘︎ Haskell, Rust, Purescript, Elm, Racket, Webflow, video-game
-            engines
-          </p>
-        </div>
-        <div>
-          <em
-            >People who have influenced how I think about computers, their role
-            in society, and our responsibilities as designers and
-            developers:</em
-          >
-          <p>
-            ↘︎ <a href="http://worrydream.com" target="_blank">Bret Victor</a>,
-            <a href="http://http://ted.hyperland.com/" target="_blank"
-              >Ted Nelson</a
-            >,
-            <a
-              href="https://en.wikipedia.org/wiki/Gilbert_Simondon"
-              target="_blank"
-              >Gilbert Simondon</a
-            >, <a href="https://frnsys.com/" target="_blank">Francis Tseng</a>,
-            <a
-              href="https://pchiusano.github.io/2013-05-22/future-of-software.html"
-              target="_blank"
-              >Paul Chiusano</a
-            >,
-            <a href="http://laurelschwulst.com/" target="_blank"
-              >Laurel Schwulst</a
-            >, <a href="http://shiba.computer" target="_blank">Cade Diehm</a>,
-            the folks at
-            <a href="http://inkandswitch.com" target="_blank">Ink and Switch</a
-            >, and many others.
-          </p>
-          <br />
-          <!-- <em>Not your cookie-cutter bootcamp JS dev</em> -->
-        </div>
-      </section>
-      <fieldset class="space-children font-faune border-light padding-lr">
         <legend class="font-format no-bottom">
           University of Chicago (2015-19)
         </legend>
         <p class="no-top">
           At UChicago, my studies encompassed a wide range of fields from
-          ecology to political theory and gave me the diverse perspectives I
-          bring to bear on my work today. I developed a deep commitment to
+          ecology to political theory and exposed me to the diverse perspectives
+          I bring to bear on my work today. I developed a deep commitment to
           building cooperative alternatives to capitalism and small, human
           peer-to-peer software + computers. Pursuing this, I taught myself web
           and video-game development and devoted much of my time to community
@@ -263,6 +293,12 @@
           code. The most important skill I picked up was the ability to quickly
           teach myself anything, whether it's a programming language or a design
           approach.
+        </p>
+        <p>
+          I believe that good design emerges from understanding larger systems
+          and how your product interacts with them– my various college
+          experiences prepared me to build products for a world that extends far
+          beyond Silicon Valley.
         </p>
         <ul>
           <p>↝ <em>B.A. with Honors Latin American Studies</em></p>
@@ -405,7 +441,7 @@
         </section>
         <section class="box-shadow-blue padding-lr">
           <h3>
-            <a href="/mom">Text My Mom!</a>
+            <a href="https://shrmntoys.anemon.es/mom">Text My Mom!</a>
             (<a href="https://github.com/radio-alice/text-mom">repository</a>)
           </h3>
           <p><em>Tech used:</em> NodeJS/Express, MongoDB, EJS, HTML/CSS/JS</p>
@@ -460,11 +496,113 @@
           </p>
         </section> -->
       </fieldset>
+      <fieldset
+        id="personal"
+        data-tab-content
+        class="space-children font-faune border-light padding-lr center"
+      >
+        <legend class="font-format no-bottom">Post-Grad Projects</legend>
+        <em class="font-faune no-top">
+          (from my free time)
+        </em>
+        <section class="box-shadow-blue padding-lr font-faune">
+          <h3>
+            <a href="/" target="_blank">anemon.es</a>
+          </h3>
+          <p>
+            Built it all myself; the css isn't clean and reusable but I want to
+            style every page differently anyway. No build step means I can
+            deploy it in one command–
+            <code>$ dat .</code>
+            sends all the files to a dat + http server I have running. Also it
+            has some fun audio effects you should check out (on Chrome please!
+            Firefox audio api is all crackly).
+          </p>
+        </section>
+        <section class="box-shadow-blue padding-lr font-faune">
+          <h3>
+            <a
+              href="https://gist.github.com/radio-alice/6695f6c1dc6ece33b51242b9b9cf0a03"
+              target="_blank"
+              rel="noopener noreferrer"
+              >this fun little shadow script</a
+            >
+          </h3>
+        </section>
+        <section class="box-shadow-blue padding-lr font-faune">
+          <h3>
+            <a href="https://github.com/radio-alice/anemone-colors"
+              >some cute themes for VSCode</a
+            >
+          </h3>
+        </section>
+        <section class="box-shadow-blue padding-lr font-faune">
+          <h3>
+            <a href="https://github.com/radio-alice/hydra-vj">Some Visuals</a>
+          </h3>
+          <p>
+            My friends and I threw a party and I made some sick visuals to go
+            with their DJ sets using the amazing
+            <a href="https://hydra-editor.glitch.me/">hydra video synth</a>.
+          </p>
+          <video
+            alt="video synthesizer responding to music in real time"
+            loop
+            controls
+            class="center margin-bottom"
+          >
+            <source src="/assets/VJ.mp4" type="video/mp4" />
+          </video>
+        </section>
+        <section class="box-shadow-blue padding-lr font-faune">
+          <h3>
+            <a href="https://github.com/radio-alice/servant-chat"
+              >mysterious server...</a
+            >
+          </h3>
+          <p>
+            I'm building a new server for e-worm.club and teaching myself
+            Haskell along the way.
+          </p>
+        </section>
+        <section class="box-shadow-blue padding-lr font-faune">
+          <h3>
+            <a href="https://github.com/radio-alice/bee-txt"
+              >a little plaintext editor in rust</a
+            >
+          </h3>
+        </section>
+      </fieldset>
     </main>
     <script>
       const elements = document.querySelectorAll('a, h1')
       document.onmousemove = event =>
         elements.forEach(element => applyShadow(event, element, 'blue', 0.1))
+
+      const tabs = document.querySelectorAll('[data-tab-target]')
+      const tabContents = document.querySelectorAll('[data-tab-content]')
+
+      const setActive = (tab, content) => {
+        tabContents.forEach(tabContent => {
+          tabContent.classList.remove('active')
+        })
+        tabs.forEach(tab => {
+          tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        content.classList.add('active')
+        window.location.hash = content.id
+      }
+      tabs.forEach(tab => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        if (tab.dataset.tabTarget === window.location.hash) {
+          setActive(tab, target)
+        }
+
+        tab.addEventListener('click', () => {
+          setActive(tab, target)
+        })
+      })
     </script>
   </body>
 </html>

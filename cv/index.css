@@ -1,15 +1,32 @@
 @font-face {
-  font-family: "Mixo";
-  src: url("/fonts/VTF_Mixo.otf");
+  font-family: 'Mixo';
+  src: url('/fonts/VTF_Mixo.otf');
 }
 @font-face {
-  font-family: "Format";
-  src: url("/fonts/Format_1452.woff");
+  font-family: 'Format';
+  src: url('/fonts/Format_1452.woff');
 }
 @font-face {
-  font-family: "Faune-Text_Regular";
-  src: url("/fonts/Faune-Text_Regular.woff");
+  font-family: 'Faune-Text_Regular';
+  src: url('/fonts/Faune-Text_Regular.woff');
 }
+@media (max-width: 550px) {
+  .tabs li {
+    font-size: 0.7em;
+  }
+  main {
+    margin: 2em 0 8em 0;
+  }
+}
+@media (min-width: 550px) {
+  .tabs li {
+    font-size: 1.25em;
+  }
+  main {
+    margin: 2em 0 5em 0;
+  }
+}
+
 .bg-pink {
   background-color: rgb(255, 233, 239);
 }
@@ -24,19 +41,20 @@ html {
 }
 .font-faune {
   line-height: 1.5em;
-  font-family: "Faune-Text_Regular";
+  font-family: 'Faune-Text_Regular';
 }
 .font-mixo {
-  font-family: "Mixo";
-  font-size: 4em;
+  font-family: 'Mixo';
+  font-size: 2em;
 }
 .font-format {
   line-height: 1.5em;
-  font-family: "Format";
+  font-family: 'Format';
   font-size: 2em;
   margin-top: 0;
 }
-p {
+p,
+code {
   font-size: 1.1em;
 }
 a {
@@ -48,17 +66,14 @@ a {
 }
 .flex-row {
   display: flex;
-  flex-wrap: wrap-reverse;
   align-items: center;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.flex-row > * {
-  flex: 1;
-  max-width: 400px;
-  margin: 3em;
+.between {
+  justify-content: space-between;
 }
-.flex-row h2 {
-  font-size: 1.5em;
+.flex-center {
+  justify-content: center;
 }
 .column {
   display: flex;
@@ -83,12 +98,12 @@ a {
 }
 .box-shadow-blue {
   border: solid 3px cornflowerblue;
-  box-shadow: 1em 1em darkblue;
+  box-shadow: 0.25em 0.25em darkblue;
   background-color: rgb(245, 236, 237);
 }
 .box-shadow-blue:active {
   box-shadow: none;
-  transform: translate(1em, 1em);
+  transform: translate(0.25em, 0.25em);
 }
 .button {
   max-width: 200px;
@@ -124,4 +139,41 @@ video,
 img {
   width: 100%;
   height: auto;
+}
+.underline {
+  text-decoration: underline;
+}
+.pointer {
+  cursor: pointer;
+}
+code {
+  background: lightgrey;
+  padding: 0.25em;
+}
+fieldset {
+  max-width: 600px;
+}
+.tabs {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tabs li {
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+.tabs li:hover,
+.tabs li.active {
+  background: rgb(255, 233, 239);
+  color: darkblue;
+}
+[data-tab-content] {
+  display: none;
+}
+.active[data-tab-content] {
+  display: block;
 }
