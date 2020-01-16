@@ -14,11 +14,11 @@
     <!-- check out the css too -->
     <ul class="tabs flex-row flex-center bg-blue text-pink font-format">
       <li data-tab-target="#about" class="active">yup it's me</li>
-      <li data-tab-target="#owl">Open Work Labs</li>
-      <li data-tab-target="#uc">UChicago</li>
       <li data-tab-target="#personal">
         personal projects
       </li>
+      <li data-tab-target="#owl">Open Work Labs</li>
+      <li data-tab-target="#uc">UChicago</li>
     </ul>
     <main>
       <fieldset
@@ -28,7 +28,7 @@
       >
         <legend class="font-mixo"><h1>Zach Sherman</h1></legend>
         <h2 class="font-faune no-top">
-          I research, design and build open, humane tech
+          I design and build digital tools and toys
         </h2>
         <div class="flex-row between">
           <address class="font-bold padding-left">
@@ -55,22 +55,23 @@
           class="bg-blue text-pink font-faune padding-lr padding-tb space-children"
         >
           <div>
-            <em>Things I'm good at</em>:
+            <em>Things I do well</em>:
             <p>
-              ↘︎ picking up new programming languages, frameworks, and tools
+              ↘︎ pick up new programming languages, frameworks, and tools
             </p>
-            <p>↘︎ quickly sketching out designs and prototypes</p>
+            <p>↘︎ quickly sketch out designs and prototypes</p>
+            <p>↘︎ communicate outside the tech echo chamber</p>
+            <p>↘︎ lead diverse teams making real change in the world</p>
             <p>
-              ↘︎ bringing a wide array of perspectives informed by years of
-              social sciences study and community organizing experiences
+              ↘︎ apply a broad perspective informed by years of social sciences
+              study and community organizing experiences
             </p>
-            <p>↘︎ working outside the tech echo chamber</p>
           </div>
           <div>
             <em>Tech I've used professionally:</em>
             <p>
-              ↘︎ HTML/CSS/JS, React, Redux, NodeJS + Express, ImmutableJS, IPFS,
-              Git, Figma, Inkscape
+              ↘︎ HTML/CSS/JS, React, Redux, NodeJS + Express, IPFS, Git, Figma,
+              Inkscape
             </p>
           </div>
           <div>
@@ -79,7 +80,7 @@
               work:</em
             >
             <p>
-              ↘︎ Haskell, Rust, Purescript, Elm, Racket, Webflow
+              ↘︎ Haskell, Rust, Purescript, Elm, F#, Racket, Webflow
             </p>
           </div>
           <div>
@@ -507,6 +508,22 @@
         </em>
         <section class="box-shadow-blue padding-lr font-faune">
           <h3>
+            <a href="https://notes.e-worm.club/p/On_critics" target="_blank"
+              >notes.e-worm.club</a
+            >
+          </h3>
+          <p>
+            a fork of etherpad-lite, so my friends and I could have a
+            collaborative docs app that was actually fun to use
+          </p>
+          <img
+            src="/assets/notes.png"
+            alt="a colorful etherpad document"
+            class="margin-bottom"
+          />
+        </section>
+        <section class="box-shadow-blue padding-lr font-faune">
+          <h3>
             <a href="/" target="_blank">anemon.es</a>
           </h3>
           <p>
@@ -518,6 +535,11 @@
             has some fun audio effects you should check out (on Chrome please!
             Firefox audio api is all crackly).
           </p>
+          <img
+            src="/assets/anemones.png"
+            alt="a screenshot of anemon.es"
+            class="margin-bottom"
+          />
         </section>
         <section class="box-shadow-blue padding-lr font-faune">
           <h3>
@@ -535,6 +557,11 @@
               >some cute themes for VSCode</a
             >
           </h3>
+          <img
+            src="https://raw.githubusercontent.com/radio-alice/anemone-colors/master/light.png"
+            alt="screenshot of a light purple vscode theme"
+            class="margin-bottom"
+          />
         </section>
         <section class="box-shadow-blue padding-lr font-faune">
           <h3>
@@ -556,21 +583,26 @@
         </section>
         <section class="box-shadow-blue padding-lr font-faune">
           <h3>
+            <a href="https://github.com/radio-alice/bee-txt"
+              >a little plaintext editor in rust</a
+            >
+          </h3>
+          <img
+            src="/assets/beetxt.png"
+            alt="screenshot of a plaintext editor"
+            class="margin-bottom"
+          />
+        </section>
+        <section class="box-shadow-blue padding-lr font-faune">
+          <h3>
             <a href="https://github.com/radio-alice/servant-chat"
               >mysterious server...</a
             >
           </h3>
           <p>
-            I'm building a new server for e-worm.club and teaching myself
-            Haskell along the way.
+            I'm building a new server for the e-worm.club group-chat and
+            teaching myself Haskell along the way.
           </p>
-        </section>
-        <section class="box-shadow-blue padding-lr font-faune">
-          <h3>
-            <a href="https://github.com/radio-alice/bee-txt"
-              >a little plaintext editor in rust</a
-            >
-          </h3>
         </section>
       </fieldset>
     </main>
@@ -593,6 +625,7 @@
         content.classList.add('active')
         window.location.hash = content.id
       }
+
       tabs.forEach(tab => {
         const target = document.querySelector(tab.dataset.tabTarget)
         if (tab.dataset.tabTarget === window.location.hash) {
