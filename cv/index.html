@@ -8,30 +8,34 @@
     <link rel="stylesheet" href="index.css" />
     <script src="../libs/shadowBB.js"></script>
   </head>
-  <body class="bg-pink center">
+  <body class="bg-grey center text-grey">
     <!-- look around -->
     <!-- drink it all in -->
     <!-- check out the css too -->
-    <ul class="tabs flex-row flex-center bg-blue text-pink font-format">
-      <li data-tab-target="#about" class="active">yup it's me</li>
-      <li data-tab-target="#personal">
+    <ul class="tabs flex-row flex-center font-format">
+      <li data-tab-target="#about" class="active bg-blue active-blue">
+        yup it's me
+      </li>
+      <li data-tab-target="#personal" class="bg-green active-green">
         personal projects
       </li>
-      <li data-tab-target="#owl">Open Work Labs</li>
-      <li data-tab-target="#uc">UChicago</li>
+      <li data-tab-target="#owl" class="bg-yellow active-yellow">
+        Open Work Labs
+      </li>
+      <li data-tab-target="#uc" class="bg-pink active-pink">UChicago</li>
     </ul>
     <main>
       <fieldset
         id="about"
         data-tab-content
-        class="text-purple space-children font-faune no-top border-light padding-lr center active"
+        class="space-children font-faune border-light padding-lr center active border-blue boxes-blue border-dashed"
       >
         <legend class="font-mixo"><h1>Zach Sherman</h1></legend>
         <h2 class="font-faune no-top">
           I design and build digital tools and toys
         </h2>
-        <div class="flex-row between">
-          <address class="font-bold padding-left">
+        <section class="flex-row between">
+          <address class="box font-bold padding-lr">
             <p>⌇ <a href="mailto:zach@anemon.es">zach [at] anemon.es</a></p>
             <p>
               ⌇
@@ -45,12 +49,12 @@
             </p>
             <p>⌇ San Francisco</p>
           </address>
-          <a href="/assets/Sherman_resume.pdf">
-            <div class="button font-format box-shadow-blue padding-lr">
+          <a href="/assets/Sherman_resume.pdf" class="box">
+            <div class="button font-format padding-lr">
               <h2>RESUME.PDF</h2>
             </div></a
           >
-        </div>
+        </section>
         <section
           class="bg-blue text-pink font-faune padding-lr padding-tb space-children"
         >
@@ -60,10 +64,9 @@
               ↘︎ pick up new programming languages, frameworks, and tools
             </p>
             <p>↘︎ quickly sketch out designs and prototypes</p>
-            <p>↘︎ communicate outside the tech echo chamber</p>
-            <p>↘︎ lead diverse teams making real change in the world</p>
+            <p>↘︎ collaborate within and outside of the tech world</p>
             <p>
-              ↘︎ apply a broad perspective informed by years of social sciences
+              ↘︎ employ a broad perspective informed by years of social sciences
               study and community organizing experiences
             </p>
           </div>
@@ -122,9 +125,9 @@
       <fieldset
         id="owl"
         data-tab-content
-        class="space-children font-faune no-top border-light padding-lr center"
+        class="space-children font-faune border-light padding-lr center boxes-yellow border-yellow border-dashed"
       >
-        <legend class="font-format">
+        <legend class="font-format bg-yellow padding-lr">
           <a href="http://openworklabs.com" target="_blank">Open Work Labs</a>
           (July - Nov 2019)
         </legend>
@@ -143,7 +146,7 @@
           became far more maintainable and declarative. I also gained extensive
           experience working with experimental decentralized-web technologies.
         </p>
-        <section class="box-shadow-blue padding-lr padding-tb">
+        <section class="box padding-lr padding-tb">
           <h3 class="no-top">
             ♒︎
             <a href="https://streams.thomasbeta1.now.sh/" target="_blank"
@@ -191,7 +194,7 @@
             redux).
           </p>
         </section>
-        <section class="box-shadow-blue padding-lr padding-tb">
+        <section class="box padding-lr padding-tb">
           <h3 class="no-top">
             ♒︎
             <a
@@ -224,7 +227,7 @@
             alt="a screenshot of a figma prototype of an inbox full of links, each with its own set of comments"
           />
         </section>
-        <section class="box-shadow-blue padding-lr padding-tb">
+        <section class="box padding-lr padding-tb">
           <h3 class="no-top">
             ☾
             <a href="http://openworklabs.com" target="_blank">OWL website</a>
@@ -240,7 +243,7 @@
             class="center"
           />
         </section>
-        <section class="box-shadow-blue padding-lr padding-tb">
+        <section class="box padding-lr padding-tb">
           <h3 class="no-top">
             ✵
             <a href="https://github.com/openworklabs/quasar">Quasar</a>
@@ -258,7 +261,7 @@
             docs and deployment setup.
           </p>
         </section>
-        <section class="box-shadow-blue padding-lr padding-tb">
+        <section class="box padding-lr padding-tb">
           <h3 class="no-top">
             ⚙︎
             <a href="http://aragon.org" target="_blank">Aragon</a>
@@ -275,9 +278,9 @@
       <fieldset
         data-tab-content
         id="uc"
-        class="space-children font-faune border-light padding-lr center"
+        class="space-children font-faune border-light padding-lr center boxes-pink border-pink border-dashed"
       >
-        <legend class="font-format no-bottom">
+        <legend class="font-format no-bottom bg-pink padding-lr">
           University of Chicago (2015-19)
         </legend>
         <p class="no-top">
@@ -303,10 +306,8 @@
         </p>
         <ul>
           <p>↝ <em>B.A. with Honors Latin American Studies</em></p>
-          <p>
-            ↝ <em>Minor in Media Arts and Design</em> +
-            <em>Dean's list all four years</em>
-          </p>
+          <p>↝ <em>Minor in Media Arts and Design</em></p>
+          <p>↝ <em>Dean's list all four years</em></p>
           <p>
             ↝ <em>Worked with / at: </em>
             <a href="https://www.reclaimchicago.org/" target="_blank"
@@ -326,7 +327,7 @@
           first learning to program, so the code quality here is definitely
           below my current standards.</em
         >
-        <section class="box-shadow-blue padding-lr">
+        <section class="box padding-lr">
           <h3 class="font-faune">
             B.A. Thesis:
             <a href="http://campeones.anemon.es" target="_blank"
@@ -346,7 +347,7 @@
             class="center margin-bottom"
           />
         </section>
-        <section class="box-shadow-blue padding-lr">
+        <section class="box padding-lr">
           <h3 class="font-faune">
             <a href="https://github.com/radio-alice/SALMOM">
               Techno-Visual Performance</a
@@ -401,7 +402,7 @@
             class="center margin-bottom"
           />
         </section>
-        <section class="box-shadow-blue padding-lr">
+        <section class="box padding-lr">
           <h3>
             <a href="https://github.com/radio-alice/racket-hw">
               Go in Typed Racket</a
@@ -440,7 +441,7 @@
             <source src="/assets/racket.mp4" type="video/mp4" />
           </video>
         </section>
-        <section class="box-shadow-blue padding-lr">
+        <section class="box padding-lr">
           <h3>
             <a href="https://shrmntoys.anemon.es/mom">Text My Mom!</a>
             (<a href="https://github.com/radio-alice/text-mom">repository</a>)
@@ -460,7 +461,7 @@
             class="center margin-bottom"
           />
         </section>
-        <section class="box-shadow-blue padding-lr">
+        <section class="box padding-lr">
           <h3>
             <a href="https://github.com/radio-alice/ARPlanets">
               AR Planets
@@ -481,7 +482,7 @@
             <source src="/assets/Planets.mp4" type="video/mp4" />
           </video>
         </section>
-        <!-- <section class="box-shadow-blue padding-lr">
+        <!-- <section class="box padding-lr">
           <h3>
             <a href="https://github.com/radio-alice/wasm-rust-GoL"
               >Game of Life</a
@@ -500,13 +501,15 @@
       <fieldset
         id="personal"
         data-tab-content
-        class="space-children font-faune border-light padding-lr center"
+        class="space-children font-faune border-light padding-lr center boxes-green border-green border-dashed"
       >
-        <legend class="font-format no-bottom">Post-Grad Projects</legend>
+        <legend class="font-format no-bottom bg-green padding-lr">
+          Post-Grad Projects
+        </legend>
         <em class="font-faune no-top">
           (from my free time)
         </em>
-        <section class="box-shadow-blue padding-lr font-faune">
+        <section class="box padding-lr font-faune">
           <h3>
             <a href="https://notes.e-worm.club/p/On_critics" target="_blank"
               >notes.e-worm.club</a
@@ -522,7 +525,7 @@
             class="margin-bottom"
           />
         </section>
-        <section class="box-shadow-blue padding-lr font-faune">
+        <section class="box padding-lr font-faune">
           <h3>
             <a href="/" target="_blank">anemon.es</a>
           </h3>
@@ -541,7 +544,7 @@
             class="margin-bottom"
           />
         </section>
-        <section class="box-shadow-blue padding-lr font-faune">
+        <section class="box padding-lr font-faune">
           <h3>
             <a
               href="https://gist.github.com/radio-alice/6695f6c1dc6ece33b51242b9b9cf0a03"
@@ -551,7 +554,7 @@
             >
           </h3>
         </section>
-        <section class="box-shadow-blue padding-lr font-faune">
+        <section class="box padding-lr font-faune">
           <h3>
             <a href="https://github.com/radio-alice/anemone-colors"
               >some cute themes for VSCode</a
@@ -563,7 +566,7 @@
             class="margin-bottom"
           />
         </section>
-        <section class="box-shadow-blue padding-lr font-faune">
+        <section class="box padding-lr font-faune">
           <h3>
             <a href="https://github.com/radio-alice/hydra-vj">Some Visuals</a>
           </h3>
@@ -581,7 +584,7 @@
             <source src="/assets/VJ.mp4" type="video/mp4" />
           </video>
         </section>
-        <section class="box-shadow-blue padding-lr font-faune">
+        <section class="box padding-lr font-faune">
           <h3>
             <a href="https://github.com/radio-alice/bee-txt"
               >a little plaintext editor in rust</a
@@ -593,7 +596,7 @@
             class="margin-bottom"
           />
         </section>
-        <section class="box-shadow-blue padding-lr font-faune">
+        <section class="box padding-lr font-faune">
           <h3>
             <a href="https://github.com/radio-alice/servant-chat"
               >mysterious server...</a
@@ -607,7 +610,7 @@
       </fieldset>
     </main>
     <script>
-      const elements = document.querySelectorAll('a, h1')
+      const elements = document.querySelectorAll('a')
       document.onmousemove = event =>
         elements.forEach(element => applyShadow(event, element, 'blue', 0.1))
 
