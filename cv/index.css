@@ -205,7 +205,7 @@ code {
 .margin-bottom {
   margin-bottom: 2em;
 }
-.space-children > * + * {
+.space-children > * + * + * {
   margin-top: 2em;
 }
 video,
