@@ -1,7 +1,7 @@
 :root {
   --pink: #ffbfd2;
-  --grey: #babeca;
-  --lightgrey: #e0e2e7;
+  --grey: #c3c7d3;
+  --lightgrey: #e6e8ee;
   --darkgrey: #21212c;
   --darkblue: #74a3fa;
   --green: #c4eebe;
@@ -113,7 +113,7 @@ code {
 }
 .tabs li:hover,
 .tabs li.active {
-  background-color: var(--darkgrey);
+  background-color: var(--grey);
 }
 .active-yellow:hover,
 .active-yellow.active {
@@ -218,6 +218,7 @@ img {
 }
 .pointer {
   cursor: pointer;
+  outline: none;
 }
 fieldset {
   max-width: 600px;
@@ -237,10 +238,4 @@ fieldset {
   cursor: pointer;
   flex: auto;
   text-align: center;
-}
-[data-tab-content] {
-  display: none;
-}
-.active[data-tab-content] {
-  display: block;
 }

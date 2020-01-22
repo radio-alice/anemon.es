@@ -30,7 +30,9 @@
         data-tab-content
         class="space-children font-faune border-light padding-lr center active border-blue boxes-blue border-dashed"
       >
-        <legend class="font-mixo"><h1>Zach Sherman</h1></legend>
+        <legend class="font-mixo">
+          <h1>Zach Sherman</h1>
+        </legend>
         <h2 class="font-faune no-top">
           I design and build digital tools and toys
         </h2>
@@ -59,9 +61,21 @@
           class="bg-blue text-pink font-faune padding-lr padding-tb space-children"
         >
           <div>
-            <em>Things I do well</em>:
+            <em class="underline">Relevant experience</em>:
             <p>
-              ↘︎ pick up new programming languages, frameworks, and tools
+              ↘︎ Product Designer/Engineer @
+              <a href="/cv/#owl">Open Work Labs</a> (July 2019 - Nov 2019)
+            </p>
+            <p>
+              ↘︎ Student @
+              <a href="/cv/#uc">University of Chicago</a> (Sep 2015 - June 2019)
+            </p>
+          </div>
+          <div>
+            <em class="underline">Things I do well</em>:
+            <p>
+              ↘︎ learn quickly: new work frameworks, design tools, programming
+              languages, etc.
             </p>
             <p>↘︎ quickly sketch out designs and prototypes</p>
             <p>↘︎ collaborate within and outside of the tech world</p>
@@ -71,25 +85,32 @@
             </p>
           </div>
           <div>
-            <em>Tech I've used professionally:</em>
+            <em class="underline">Professional experience with:</em>
+            <p>↘︎ Design Sprints, Full-Stack Engineering</p>
             <p>
-              ↘︎ HTML/CSS/JS, React, Redux, NodeJS + Express, IPFS, Git, Figma,
-              Inkscape
+              ↘︎ HTML/CSS/JS, React, Redux, NodeJS + Express
+            </p>
+            <p>
+              ↘︎ Figma, Inkscape, Adobe CC
+            </p>
+            <p>
+              ↘︎ IPFS, Git
             </p>
           </div>
           <div>
-            <em>Passionate about:</em>
+            <em class="underline">Passionate about:</em>
             <p>
               ↘︎ functional programming, no-code tools
             </p>
             <p>
               ↘︎ UIs that clearly map interaction to result (e.g. Ableton,
-              Notion ❤)
+              Notion, Figma ❤)
             </p>
-            <p>↘︎ wearing a bunch of different hats + systems-level thinking</p>
+            <p>↘︎ systems-level thinking + wearing a bunch of different hats</p>
+            <p>↘︎ ↝unicode arrows↜</p>
           </div>
           <div>
-            <em
+            <em class="underline"
               >People who have influenced how I think about computers, their
               role in society, and our responsibilities as designers and
               developers:</em
@@ -134,7 +155,7 @@
           (July - Nov 2019)
         </legend>
         <h3 class="font-faune no-top">
-          Software Engineer + Designer – Contract
+          Product Designer + Engineer
         </h3>
         <p class="no-top">
           At OWL, my leadership in the design process and quick learning
@@ -153,17 +174,28 @@
           <details class="margin-bottom">
             <summary class="pointer underline">Design process:</summary>
             <p>
-              Streams is an experimental product that creates shareable feeds of
-              your work; the prototype linked above organizes GitHub events for
-              any given repo. I led a series of iterative design sprints–
-              sketching, prototyping, and user-testing a variety of
-              organizational schemes for your GitHub events.
+              Our team found that it's all to easy for people on teams to lose
+              track of what work their team is doing. Also it's pretty difficult
+              to ambiently capture and share that work. Our goal was to turn
+              organizing and sharing work into a continuous, passive process. In
+              its early iterations, Streams was an experimental product that
+              created shareable feeds of your GitHub events for any given repo.
+            </p>
+            <p>
+              I led a series of iterative design sprints– sketching,
+              prototyping, and user-testing a variety of organizational schemes
+              for your GitHub events. Along the way, we learned that filtering
+              and grouping the firehose of data is crucial to its usefulness
+              (people do a lot on GitHub). I also tried out a bunch of different
+              UI tricks to filter out information, while making that data easily
+              accessible through user interactions.
             </p>
             <p>
               For these experiments, I was entirely responsible for the visual
               design and its implementation. I also contributed significantly to
               prior user research, application logic (react + redux), and
-              user-testing.
+              user-testing. If I had to do it again, I would test Figma
+              prototypes first instead of fully built web apps.
             </p>
           </details>
           <img
@@ -183,13 +215,24 @@
           <details class="margin-bottom"
             ><summary class="pointer underline">Design process:</summary>
             <p>
-              The goal of this sprint was to design a product for sharing your
-              work with collaborators while substituting the work of app
-              integrations (like GitHub) with manual updates by users
-              themselves. For this sprint I decided to validate the hypothesis
-              with the Figma prototype itself. I created the initial (paper)
-              skeches and 80% of the prototyping for this sprint and was
-              completely responsible for user-testing.
+              The goal of this sprint was much the same as the previous: design
+              a product for sharing your work with collaborators. This time, I
+              tried substituting the work of api integrations (e.g. GitHub) with
+              manual updates by users themselves. If this was something people
+              desperately needed, would they be willing to manually report when
+              they had edited docs or pushed code?
+            </p>
+            <p>
+              For this sprint I decided to validate the hypothesis with the
+              Figma prototype itself. I created the initial (paper) skeches and
+              80% of the prototyping for this sprint and was completely
+              responsible for user-testing.
+            </p>
+            <p>
+              We found that, no, people do not need something like this badly
+              enough to go through the effort of manual updates, unless their
+              work is spread between like eight to ten apps with no integrations
+              between any of them.
             </p>
           </details>
           <img
@@ -209,8 +252,9 @@
             <p>
               I am responsible for all the design and code for the OWL site,
               including the logo. I also contributed significantly to the copy.
-              This site was crucial to establishing the OWL brand early in its
-              existence.
+              We wanted to capture our no-BS, playful attitudes and emphasize
+              our belief in the power of open, transparent work. This site was
+              crucial to establishing the OWL brand early in its existence.
             </p>
           </details>
           <img
@@ -250,8 +294,158 @@
         </section>
       </fieldset>
       <fieldset
+        id="personal"
         data-tab-content
+        class="space-children font-faune border-light padding-lr center boxes-green border-green border-dashed"
+      >
+        <legend class="font-format no-bottom bg-green padding-lr">
+          Post-Grad Projects
+        </legend>
+        <em class="font-faune no-top">
+          (from my free time)
+        </em>
+        <section class="box padding-lr font-faune">
+          <h3>
+            <a href="https://notes.e-worm.club/p/On_critics" target="_blank"
+              >notes.e-worm.club</a
+            >
+          </h3>
+          <p>
+            I forked
+            <a href="https://github.com/ether/etherpad-lite" target="_blank"
+              >etherpad-lite</a
+            >, so my friends and I could have a collaborative docs app that was
+            actually fun to use
+          </p>
+          <img
+            src="/assets/notes.png"
+            alt="a colorful etherpad document"
+            class="margin-bottom"
+          />
+        </section>
+        <section class="box padding-lr font-faune">
+          <h3>
+            <a href="/" target="_blank">anemon.es</a>
+          </h3>
+          <details class="margin-bottom">
+            <summary class="pointer underline">Details: </summary>
+            <p>
+              Built it all myself; the css isn't clean and reusable but I want
+              to style every page differently anyway. No build step means I can
+              deploy it in one command–
+              <code>$ dat .</code>
+              sends all the files to a dat + http server I have running. Also it
+              has some fun audio effects you should check out (on Chrome please!
+              Firefox audio api is all crackly).
+            </p>
+          </details>
+          <img
+            src="/assets/anemones.png"
+            alt="a screenshot of anemon.es"
+            class="margin-bottom"
+          />
+        </section>
+        <section class="box padding-lr font-faune">
+          <h3>
+            <a href="https://github.com/radio-alice/e-worm">e-worm.club</a>
+          </h3>
+          <details class="margin-bottom">
+            <summary class="pointer underline">Details: </summary>
+            <p>
+              I'm building a custom
+              <a
+                href="http://pleroman.social"
+                target="_blank"
+                rel="noopener noreferrer"
+                >pleroma</a
+              >
+              client so that my friends and I can have a cute, self-hosted
+              social network to post about politics and art. Right now our
+              biggest problem is the inherent ephemerality of our groupchat— it
+              doesn't really succeed as a collaborative thinking space, because
+              it has no long-term memory. When messages are constantly buried
+              under new ones, it places the burden on us to remember previous
+              conversations. So the ultimate design goal for e-worm is to create
+              a self-archiving conversational interface that preserves thought
+              and helps us keep thinking new things rather than going in
+              intellectual circles.
+            </p>
+            <p>
+              One idea I'm testing is emphasizing threads in the UI to force us
+              to delineate our conversations rather than having an unparseable
+              monolithic stream of consciousness (as in our current groupchat).
+              I plan to add an export to
+              <a href="http://are.na" target="_blank" rel="noopener noreferrer"
+                >are.na</a
+              >
+              button on each thread that will create a channel from the thread
+              with each message as a 'block'. Higher level channels will
+              categorize these 'thread' channels by subject. I chose are.na
+              because its interface encourages a sort of public digital memory
+              that I haven't found with any other software.
+            </p>
+          </details>
+        </section>
+        <section class="box padding-lr font-faune">
+          <h3>
+            <a
+              href="https://gist.github.com/radio-alice/6695f6c1dc6ece33b51242b9b9cf0a03"
+              target="_blank"
+              rel="noopener noreferrer"
+              >this fun little shadow script</a
+            >
+          </h3>
+          <details class="margin-bottom">
+            <summary class="pointer underline">Details: </summary>
+            <script src="https://gist.github.com/radio-alice/6695f6c1dc6ece33b51242b9b9cf0a03.js"></script>
+          </details>
+        </section>
+        <section class="box padding-lr font-faune">
+          <h3>
+            <a href="https://github.com/radio-alice/anemone-colors"
+              >some cute themes for VSCode</a
+            >
+          </h3>
+          <img
+            src="https://raw.githubusercontent.com/radio-alice/anemone-colors/master/light.png"
+            alt="screenshot of a light purple vscode theme"
+            class="margin-bottom"
+          />
+        </section>
+        <section class="box padding-lr font-faune">
+          <h3>
+            <a href="https://github.com/radio-alice/hydra-vj">Some Visuals</a>
+          </h3>
+          <p>
+            My friends and I threw a party and I made some sick visuals to go
+            with their DJ sets using the amazing
+            <a href="https://hydra-editor.glitch.me/">hydra video synth</a>.
+          </p>
+          <video
+            alt="video synthesizer responding to music in real time"
+            loop
+            controls
+            class="center margin-bottom"
+          >
+            <source src="/assets/VJ.mp4" type="video/mp4" />
+          </video>
+        </section>
+        <section class="box padding-lr font-faune">
+          <h3>
+            <a href="https://github.com/radio-alice/bee-txt"
+              >a little plaintext editor in rust</a
+            >
+          </h3>
+          <img
+            src="/assets/beetxt.png"
+            alt="screenshot of a plaintext editor"
+            class="margin-bottom"
+          />
+        </section>
+      </fieldset>
+      <fieldset
         id="uc"
+        data-tab-content
         class="space-children font-faune border-light padding-lr center boxes-pink border-pink border-dashed"
       >
         <legend class="font-format no-bottom bg-pink padding-lr">
@@ -263,10 +457,10 @@
           Political organizing taught me how to lead effective teams and
           collaborate with people who had totally different backgrounds from my
           own (and win a bunch of people-powered victories!). In UChicago's
-          design program I practices using my systems-analysis skills to
-          actually create useful products. Most importantly, I learned to
-          quickly teach myself anything, whether it's a programming language or
-          a design approach, and to collaborate and communicate effectively.
+          design program I practiced using my systems-analysis skills to create
+          useful products. Most importantly, I learned to quickly teach myself
+          anything, whether it's a programming language or a design approach,
+          and to collaborate and communicate effectively.
         </p>
         <!-- <p>
           I believe that good design emerges from understanding larger systems
@@ -480,122 +674,6 @@
           </p>
         </section> -->
       </fieldset>
-      <fieldset
-        id="personal"
-        data-tab-content
-        class="space-children font-faune border-light padding-lr center boxes-green border-green border-dashed"
-      >
-        <legend class="font-format no-bottom bg-green padding-lr">
-          Post-Grad Projects
-        </legend>
-        <em class="font-faune no-top">
-          (from my free time)
-        </em>
-        <section class="box padding-lr font-faune">
-          <h3>
-            <a href="https://notes.e-worm.club/p/On_critics" target="_blank"
-              >notes.e-worm.club</a
-            >
-          </h3>
-          <p>
-            I forked
-            <a href="https://github.com/ether/etherpad-lite" target="_blank"
-              >etherpad-lite</a
-            >, so my friends and I could have a collaborative docs app that was
-            actually fun to use
-          </p>
-          <img
-            src="/assets/notes.png"
-            alt="a colorful etherpad document"
-            class="margin-bottom"
-          />
-        </section>
-        <section class="box padding-lr font-faune">
-          <h3>
-            <a href="/" target="_blank">anemon.es</a>
-          </h3>
-          <details class="margin-bottom">
-            <summary class="pointer underline">Details: </summary>
-            <p>
-              Built it all myself; the css isn't clean and reusable but I want
-              to style every page differently anyway. No build step means I can
-              deploy it in one command–
-              <code>$ dat .</code>
-              sends all the files to a dat + http server I have running. Also it
-              has some fun audio effects you should check out (on Chrome please!
-              Firefox audio api is all crackly).
-            </p>
-          </details>
-          <img
-            src="/assets/anemones.png"
-            alt="a screenshot of anemon.es"
-            class="margin-bottom"
-          />
-        </section>
-        <section class="box padding-lr font-faune">
-          <h3>
-            <a
-              href="https://gist.github.com/radio-alice/6695f6c1dc6ece33b51242b9b9cf0a03"
-              target="_blank"
-              rel="noopener noreferrer"
-              >this fun little shadow script</a
-            >
-          </h3>
-        </section>
-        <section class="box padding-lr font-faune">
-          <h3>
-            <a href="https://github.com/radio-alice/anemone-colors"
-              >some cute themes for VSCode</a
-            >
-          </h3>
-          <img
-            src="https://raw.githubusercontent.com/radio-alice/anemone-colors/master/light.png"
-            alt="screenshot of a light purple vscode theme"
-            class="margin-bottom"
-          />
-        </section>
-        <section class="box padding-lr font-faune">
-          <h3>
-            <a href="https://github.com/radio-alice/hydra-vj">Some Visuals</a>
-          </h3>
-          <p>
-            My friends and I threw a party and I made some sick visuals to go
-            with their DJ sets using the amazing
-            <a href="https://hydra-editor.glitch.me/">hydra video synth</a>.
-          </p>
-          <video
-            alt="video synthesizer responding to music in real time"
-            loop
-            controls
-            class="center margin-bottom"
-          >
-            <source src="/assets/VJ.mp4" type="video/mp4" />
-          </video>
-        </section>
-        <section class="box padding-lr font-faune">
-          <h3>
-            <a href="https://github.com/radio-alice/bee-txt"
-              >a little plaintext editor in rust</a
-            >
-          </h3>
-          <img
-            src="/assets/beetxt.png"
-            alt="screenshot of a plaintext editor"
-            class="margin-bottom"
-          />
-        </section>
-        <section class="box padding-lr font-faune">
-          <h3>
-            <a href="https://github.com/radio-alice/servant-chat"
-              >mysterious server...</a
-            >
-          </h3>
-          <p>
-            I'm building a new server for the e-worm.club group-chat and
-            teaching myself Haskell along the way.
-          </p>
-        </section>
-      </fieldset>
     </main>
     <script>
       const elements = document.querySelectorAll('a')
@@ -604,29 +682,52 @@
 
       const tabs = document.querySelectorAll('[data-tab-target]')
       const tabContents = document.querySelectorAll('[data-tab-content]')
-
-      const setActive = (tab, content) => {
-        tabContents.forEach(tabContent => {
-          tabContent.classList.remove('active')
-        })
-        tabs.forEach(tab => {
-          tab.classList.remove('active')
-        })
-        tab.classList.add('active')
-        content.classList.add('active')
-        window.location.hash = content.id
-      }
+      const scrollTo = content => (location.href = `#${content.id}`)
 
       tabs.forEach(tab => {
         const target = document.querySelector(tab.dataset.tabTarget)
         if (tab.dataset.tabTarget === window.location.hash) {
-          setActive(tab, target)
+          scrollTo(tab, target)
         }
 
         tab.addEventListener('click', () => {
           setActive(tab, target)
         })
       })
+
+      let currentTab = tabs[0]
+      const activateTab = tab => {
+        if (tab.dataset.tabTarget == currentTab.dataset.tabTarget) return
+        tabs.forEach(tab => {
+          tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        currentTab = tab
+      }
+      const setActive = (tab, content) => {
+        activateTab(tab)
+        scrollTo(content)
+      }
+
+      const isInTopHalf = el => {
+        const rect = el.getBoundingClientRect()
+        return (
+          rect.bottom >= 0 &&
+          rect.top <=
+            (window.innerHeight / 2 ||
+              document.documentElement.clientHeight / 2)
+        )
+      }
+      const update = () =>
+        tabContents.forEach(element => {
+          if (isInTopHalf(element))
+            tabs.forEach(tab => {
+              if (tab.dataset.tabTarget.substr(1) === element.id)
+                activateTab(tab)
+            })
+        })
+
+      window.onscroll = update
     </script>
   </body>
 </html>
