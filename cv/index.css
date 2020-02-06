@@ -220,6 +220,7 @@ img {
   cursor: pointer;
   outline: none;
 }
+.constrain,
 fieldset {
   max-width: 600px;
   margin-top: 3em !important;

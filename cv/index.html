@@ -13,22 +13,20 @@
     <!-- drink it all in -->
     <!-- check out the css too -->
     <ul class="tabs flex-row flex-center font-format">
-      <li data-tab-target="#about" class="active bg-blue active-blue">
-        yup it's me
-      </li>
-      <li data-tab-target="#owl" class="bg-yellow active-yellow">
+      <li data-tab-target="#owl" class="active bg-yellow active-yellow">
         Open Work Labs
       </li>
       <li data-tab-target="#personal" class="bg-green active-green">
         personal projects
       </li>
+      <li data-tab-target="#about" class="bg-blue active-blue">
+        yup it's me
+      </li>
       <li data-tab-target="#uc" class="bg-pink active-pink">UChicago</li>
     </ul>
     <main>
-      <fieldset
-        id="about"
-        data-tab-content
-        class="space-children font-faune border-light padding-lr center active border-blue boxes-blue border-dashed"
+      <div
+        class="constrain space-children font-faune border-light padding-lr center boxes-blue"
       >
         <legend class="font-mixo">
           <h1>Zach Sherman</h1>
@@ -57,93 +55,6 @@
             </div></a
           >
         </section>
-        <section
-          class="bg-blue text-pink font-faune padding-lr padding-tb space-children"
-        >
-          <div>
-            <em class="underline">Relevant experience</em>:
-            <p>
-              ↘︎ Product Designer/Engineer @
-              <a href="/cv/#owl">Open Work Labs</a> (July 2019 - Nov 2019)
-            </p>
-            <p>
-              ↘︎ Student @
-              <a href="/cv/#uc">University of Chicago</a> (Sep 2015 - June 2019)
-            </p>
-          </div>
-          <div>
-            <em class="underline">Things I do well</em>:
-            <p>
-              ↘︎ learn quickly: new work frameworks, design tools, programming
-              languages, etc.
-            </p>
-            <p>↘︎ quickly sketch out designs and prototypes</p>
-            <p>↘︎ collaborate within and outside of the tech world</p>
-            <p>
-              ↘︎ employ a broad perspective informed by years of social sciences
-              study and community organizing experiences
-            </p>
-          </div>
-          <div>
-            <em class="underline">Professional experience with:</em>
-            <p>↘︎ Design Sprints, Full-Stack Engineering</p>
-            <p>
-              ↘︎ HTML/CSS/JS, React, Redux, NodeJS + Express
-            </p>
-            <p>
-              ↘︎ Figma, Inkscape, Adobe CC
-            </p>
-            <p>
-              ↘︎ IPFS, Git
-            </p>
-          </div>
-          <div>
-            <em class="underline">Passionate about:</em>
-            <p>
-              ↘︎ functional programming, no-code tools
-            </p>
-            <p>
-              ↘︎ UIs that clearly map interaction to result (e.g. Ableton,
-              Notion, Figma ❤)
-            </p>
-            <p>↘︎ systems-level thinking + wearing a bunch of different hats</p>
-            <p>↘︎ ↝unicode arrows↜</p>
-          </div>
-          <div>
-            <em class="underline"
-              >People who have influenced how I think about computers, their
-              role in society, and our responsibilities as designers and
-              developers:</em
-            >
-            <p>
-              ↘︎
-              <a href="http://worrydream.com" target="_blank">Bret Victor</a>,
-              <a href="http://http://ted.hyperland.com/" target="_blank"
-                >Ted Nelson</a
-              >,
-              <a
-                href="https://en.wikipedia.org/wiki/Gilbert_Simondon"
-                target="_blank"
-                >Gilbert Simondon</a
-              >,
-              <a href="https://frnsys.com/" target="_blank">Francis Tseng</a>,
-              <a
-                href="https://pchiusano.github.io/2013-05-22/future-of-software.html"
-                target="_blank"
-                >Paul Chiusano</a
-              >,
-              <a href="http://laurelschwulst.com/" target="_blank"
-                >Laurel Schwulst</a
-              >, <a href="http://shiba.computer" target="_blank">Cade Diehm</a>,
-              the folks at
-              <a href="http://inkandswitch.com" target="_blank"
-                >Ink and Switch</a
-              >, and many others.
-            </p>
-            <br />
-            <!-- <em>Not your cookie-cutter bootcamp JS dev</em> -->
-          </div>
-        </section>
       </fieldset>
       <fieldset
         id="owl"
@@ -155,12 +66,12 @@
           (July - Nov 2019)
         </legend>
         <h3 class="font-faune no-top">
-          Product Designer + Engineer
+          Product Engineer
         </h3>
         <p class="no-top">
           At OWL, my leadership in the design process and quick learning
           abilities allowed us to complete weekly design sprints while spending
-          the majority of our time doing external contract work.
+          the majority of our time doing external engineering contract work.
         </p>
         <section class="box padding-lr padding-tb">
           <h3 class="no-top">
@@ -193,7 +104,7 @@
             <p>
               For these experiments, I was entirely responsible for the visual
               design and its implementation. I also contributed significantly to
-              prior user research, application logic (react + redux), and
+              prior user research, application logic (React + Redux), and
               user-testing. If I had to do it again, I would test Figma
               prototypes first instead of fully built web apps.
             </p>
@@ -280,7 +191,7 @@
             docs and deployment setup.
           </p>
         </section>
-        <section class="box padding-lr padding-tb">
+        <!-- <section class="box padding-lr padding-tb">
           <h3 class="no-top">
             <a href="http://aragon.org" target="_blank">Aragon</a>
           </h3>
@@ -291,7 +202,7 @@
             other various
             <a href="http://ipfs.io" target="_blank">IPFS</a> integrations.
           </p>
-        </section>
+        </section> -->
       </fieldset>
       <fieldset
         id="personal"
@@ -304,6 +215,61 @@
         <em class="font-faune no-top">
           (from my free time)
         </em>
+        <section class="box padding-lr font-faune">
+          <h3>
+            <a href="https://e-worm.club" target="_blank">e-worm.club</a> (<a
+              href="https://github.com/radio-alice/e-worm"
+              target="_blank"
+              >source code</a
+            >
+            )
+          </h3>
+          <details class="margin-bottom">
+            <summary class="pointer underline">Details: </summary>
+            <p>
+              I'm building a custom
+              <a
+                href="http://pleroman.social"
+                target="_blank"
+                rel="noopener noreferrer"
+                >pleroma</a
+              >
+              client so that my friends and I can have a cute, self-hosted
+              social network to post about politics and art. Right now our
+              biggest problem is the inherent ephemerality of our groupchat— it
+              doesn't really succeed as a collaborative thinking space, because
+              it has no long-term memory. When messages are constantly buried
+              under new ones, it places the burden on us to remember previous
+              conversations. So the ultimate design goal for e-worm is to create
+              a self-archiving conversational interface that preserves thought
+              and helps us keep thinking new things rather than going in
+              intellectual circles.
+            </p>
+            <p>
+              One idea I'm testing is emphasizing threads in the UI to force us
+              to delineate our conversations rather than having an unparseable
+              monolithic stream of consciousness (as in our current groupchat).
+              I plan to add an export to
+              <a href="http://are.na" target="_blank" rel="noopener noreferrer"
+                >are.na</a
+              >
+              button on each thread that will create a channel from the thread
+              with each message as a 'block'. Higher level channels will
+              categorize these 'thread' channels by subject. I chose are.na
+              because its interface encourages a sort of public digital memory
+              that I haven't found with any other software. However, are.na
+              itself doesn't have the conversational UI that I think is
+              necessary for a real-time collaborative thinking tool— it's
+              interface is more about discovering and connecting than
+              communicating directly.
+            </p>
+          </details>
+          <img
+            class="center margin-bottom"
+            src="/assets/e-worm.png"
+            alt="a cute twitter-like UI"
+          />
+        </section>
         <section class="box padding-lr font-faune">
           <h3>
             <a href="https://notes.e-worm.club/p/On_critics" target="_blank"
@@ -345,48 +311,7 @@
             class="margin-bottom"
           />
         </section>
-        <section class="box padding-lr font-faune">
-          <h3>
-            <a href="https://github.com/radio-alice/e-worm">e-worm.club</a>
-          </h3>
-          <details class="margin-bottom">
-            <summary class="pointer underline">Details: </summary>
-            <p>
-              I'm building a custom
-              <a
-                href="http://pleroman.social"
-                target="_blank"
-                rel="noopener noreferrer"
-                >pleroma</a
-              >
-              client so that my friends and I can have a cute, self-hosted
-              social network to post about politics and art. Right now our
-              biggest problem is the inherent ephemerality of our groupchat— it
-              doesn't really succeed as a collaborative thinking space, because
-              it has no long-term memory. When messages are constantly buried
-              under new ones, it places the burden on us to remember previous
-              conversations. So the ultimate design goal for e-worm is to create
-              a self-archiving conversational interface that preserves thought
-              and helps us keep thinking new things rather than going in
-              intellectual circles.
-            </p>
-            <p>
-              One idea I'm testing is emphasizing threads in the UI to force us
-              to delineate our conversations rather than having an unparseable
-              monolithic stream of consciousness (as in our current groupchat).
-              I plan to add an export to
-              <a href="http://are.na" target="_blank" rel="noopener noreferrer"
-                >are.na</a
-              >
-              button on each thread that will create a channel from the thread
-              with each message as a 'block'. Higher level channels will
-              categorize these 'thread' channels by subject. I chose are.na
-              because its interface encourages a sort of public digital memory
-              that I haven't found with any other software.
-            </p>
-          </details>
-        </section>
-        <section class="box padding-lr font-faune">
+        <!-- <section class="box padding-lr font-faune">
           <h3>
             <a
               href="https://gist.github.com/radio-alice/6695f6c1dc6ece33b51242b9b9cf0a03"
@@ -399,7 +324,7 @@
             <summary class="pointer underline">Details: </summary>
             <script src="https://gist.github.com/radio-alice/6695f6c1dc6ece33b51242b9b9cf0a03.js"></script>
           </details>
-        </section>
+        </section> -->
         <section class="box padding-lr font-faune">
           <h3>
             <a href="https://github.com/radio-alice/anemone-colors"
@@ -430,7 +355,7 @@
             <source src="/assets/VJ.mp4" type="video/mp4" />
           </video>
         </section>
-        <section class="box padding-lr font-faune">
+        <!-- <section class="box padding-lr font-faune">
           <h3>
             <a href="https://github.com/radio-alice/bee-txt"
               >a little plaintext editor in rust</a
@@ -441,6 +366,99 @@
             alt="screenshot of a plaintext editor"
             class="margin-bottom"
           />
+        </section> -->
+      </fieldset>
+      <div
+        id="about"
+        data-tab-content
+        class="font-faune border-light center boxes-blue"
+      >
+        <section
+          class="bg-blue text-pink font-faune padding-lr padding-tb space-children"
+        >
+          <div>
+            <em class="underline">Relevant experience</em>:
+            <p>
+              ↘︎ Product Engineer @
+              <a href="/cv/#owl">Open Work Labs</a> (July 2019 - Nov 2019)
+            </p>
+            <p>
+              ↘︎ Student @
+              <a href="/cv/#uc">University of Chicago</a> (Sep 2015 - June 2019)
+            </p>
+          </div>
+          <div>
+            <em class="underline">Things I do well</em>:
+            <p>
+              ↘︎ learn quickly: new tech stacks + programming languages, work
+              frameworks, design tools, etc.
+            </p>
+            <p>↘︎ quickly sketch out designs and prototypes</p>
+            <p>↘︎ collaborate within and outside of the tech world</p>
+            <p>
+              ↘︎ employ a broad perspective informed by years of social sciences
+              study and community organizing experiences
+            </p>
+          </div>
+          <div>
+            <em class="underline">Professional experience with:</em>
+            <p>
+              ↘︎ HTML/CSS/JS, React + Redux, NodeJS + Express
+            </p>
+            <p>↘︎ Design Sprints, Full-Stack Engineering</p>
+            <p>
+              ↘︎ Figma, Inkscape, Adobe CC
+            </p>
+            <p>
+              ↘︎ IPFS, Git
+            </p>
+          </div>
+          <div>
+            <em class="underline">Passionate about:</em>
+            <p>
+              ↘︎ functional programming, no-code tools
+            </p>
+            <p>
+              ↘︎ UIs that clearly map interaction to result (e.g. Ableton,
+              Notion, Figma ❤)
+            </p>
+            <p>↘︎ systems-level thinking + wearing a bunch of different hats</p>
+            <p>↘︎ ↝unicode arrows↜</p>
+          </div>
+          <div>
+            <em class="underline"
+              >People who have influenced how I think about computers, their
+              role in society, and our responsibilities as designers and
+              developers:</em
+            >
+            <p>
+              ↘︎
+              <a href="http://worrydream.com" target="_blank">Bret Victor</a>,
+              <a href="http://http://ted.hyperland.com/" target="_blank"
+                >Ted Nelson</a
+              >,
+              <a
+                href="https://en.wikipedia.org/wiki/Gilbert_Simondon"
+                target="_blank"
+                >Gilbert Simondon</a
+              >,
+              <a href="https://frnsys.com/" target="_blank">Francis Tseng</a>,
+              <a
+                href="https://pchiusano.github.io/2013-05-22/future-of-software.html"
+                target="_blank"
+                >Paul Chiusano</a
+              >,
+              <a href="http://laurelschwulst.com/" target="_blank"
+                >Laurel Schwulst</a
+              >, <a href="http://shiba.computer" target="_blank">Cade Diehm</a>,
+              the folks at
+              <a href="http://inkandswitch.com" target="_blank"
+                >Ink and Switch</a
+              >, and many others.
+            </p>
+            <br />
+            <!-- <em>Not your cookie-cutter bootcamp JS dev</em> -->
+          </div>
         </section>
       </fieldset>
       <fieldset
@@ -593,7 +611,7 @@
             <source src="/assets/Planets.mp4" type="video/mp4" />
           </video>
         </section>
-        <section class="box padding-lr">
+        <!-- <section class="box padding-lr">
           <h3>
             <a href="https://github.com/radio-alice/racket-hw">
               Go in Typed Racket</a
@@ -634,8 +652,8 @@
           >
             <source src="/assets/racket.mp4" type="video/mp4" />
           </video>
-        </section>
-        <section class="box padding-lr">
+        </section> -->
+        <!-- <section class="box padding-lr">
           <h3>
             <a href="https://shrmntoys.anemon.es/mom">Text My Mom!</a>
             (<a href="https://github.com/radio-alice/text-mom">repository</a>)
@@ -657,7 +675,7 @@
             src="/assets/mom.png"
             class="center margin-bottom"
           />
-        </section>
+        </section> -->
         <!-- <section class="box padding-lr">
           <h3>
             <a href="https://github.com/radio-alice/wasm-rust-GoL"
