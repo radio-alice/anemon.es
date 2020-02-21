@@ -149,8 +149,13 @@ html {
   margin-top: 0;
 }
 p,
-code {
+code,
+blockquote {
   font-size: 1.1em;
+}
+blockquote em {
+  font-style: normal;
+  font-weight: bold;
 }
 .center {
   margin: 0 auto;
