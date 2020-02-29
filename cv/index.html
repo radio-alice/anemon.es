@@ -122,6 +122,13 @@
           product strategy to dev ops, he’s
           <em>able to make great things happen, fast</em>.” - Thomas O’Brien
         </blockquote>
+        <ul>
+          <li><em>built frontends</em> with React + Redux</li>
+          <li><em>built backends</em> with NodeJS, IPFS, and MongoDB</li>
+          <li
+            ><em>led design sprints</em>– sketches, prototypes, and user-tests
+          </li>
+        </ul>
         <section class="box padding-lr padding-tb">
           <h3 class="no-top">
             <a href="https://streams.thomasbeta1.now.sh/" target="_blank"
@@ -707,7 +714,7 @@
       const setURL = content => {
         const id = content.id
         content.removeAttribute('id')
-        window.location.hash = `#${id}`
+        history.replaceState(undefined, undefined, `#${id}`)
         content.setAttribute('id', id)
       }
       const setActive = (tab, content) => {
