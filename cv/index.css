@@ -153,7 +153,8 @@ code,
 blockquote {
   font-size: 1.1em;
 }
-blockquote em {
+blockquote em,
+ul em {
   font-style: normal;
   font-weight: bold;
 }
@@ -244,4 +245,11 @@ fieldset {
   cursor: pointer;
   flex: auto;
   text-align: center;
+}
+fieldset ul {
+  list-style: none;
+}
+fieldset ul li::before {
+  content: '→';
+  margin: 0 0.5rem;
 }
